@@ -1,31 +1,32 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col>
-        <v-text-field
-          outlined
-          style="max-width: 300px"
-          @keydown.enter="submit"
-          v-model.trim="url"
-          label="Target URL"
-          clearable
-        ></v-text-field>
-      </v-col>
-      <v-col cols="12">
-        <v-textarea
-          clearable
-          outlined
-          label="HTML data"
-          readonly
-          v-model="htmlData"
-        ></v-textarea>
-      </v-col>
-      <v-col cols="12">
-        <h3>Number of images in your URL is...</h3>
-        <h2 v-text="urlImagesNum"></h2>
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row>
+    <v-col>
+      <v-text-field
+        outlined
+        style="max-width: 300px"
+        @keydown.enter="submit"
+        v-model.trim="url"
+        label="Target URL"
+        clearable
+      ></v-text-field>
+    </v-col>
+    <v-col cols="12">
+      <v-textarea
+        clearable
+        outlined
+        label="HTML data"
+        readonly
+        v-model="htmlData"
+      ></v-textarea>
+    </v-col>
+    <v-col cols="12">
+      <h3>Number of images in your URL is...</h3>
+      <h2 v-text="urlImagesNum"></h2>
+    </v-col>
+    <v-col cols="12" v-if="error != null">
+      <p style="color: red">{{ error }}</p>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -37,11 +38,21 @@ export default {
       htmlData: null,
       urlImagesNum: 0,
       imgRegex: /<img.*\/>/g,
+      error: null,
     };
   },
 
   methods: {
+    clearError() {
+      this.error = null;
+    },
+    setError(err) {
+      this.error = err.toString();
+    },
     async submit() {
+      // Clear error
+      this.clearError();
+      // ===========
       if (this.url != null) {
         let response = null;
         const targetURL = this.url;
@@ -53,7 +64,7 @@ export default {
           }
           // console.log(response);
         } catch (err) {
-          alert(err.toString());
+          this.setError(err);
           // console.error(err);
         }
       } else {
