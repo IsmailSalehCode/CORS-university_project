@@ -23,9 +23,9 @@
       <h3>Number of images in your URL is...</h3>
       <h2 v-text="urlImagesNum"></h2>
     </v-col>
-    <v-col cols="12" v-if="error != null">
+    <v-col cols="12" v-if="error == true">
       <v-alert border="left" elevation="3" type="error">
-        {{ error }}
+        Error occured. Press F12 to inspect console.
       </v-alert>
     </v-col>
   </v-row>
@@ -40,18 +40,15 @@ export default {
       htmlData: null,
       urlImagesNum: "-",
       imgRegex: /<img.*\/>/g,
-      error: null,
+      error: false,
     };
   },
 
   methods: {
     resetData() {
-      this.error = null;
+      this.error = false;
       this.htmlData = null;
       this.urlImagesNum = "-";
-    },
-    setError(err) {
-      this.error = err.toString();
     },
     async submit() {
       // Reset
@@ -68,8 +65,7 @@ export default {
           }
           // console.log(response);
         } catch (err) {
-          this.setError(err);
-          // console.error(err);
+          this.error = true;
         }
       } else {
         alert("No url submitted");
