@@ -7,7 +7,7 @@
           style="max-width: 300px"
           @keydown.enter="submit"
           v-model.trim="url"
-          label="Your URL"
+          label="Target URL"
           clearable
         ></v-text-field>
       </v-col>
@@ -24,11 +24,6 @@
         <h3>Number of images in your URL is...</h3>
         <h2 v-text="urlImagesNum"></h2>
       </v-col>
-      <v-col cols="12">
-        <center>
-          <h5 v-text="race_message"></h5>
-        </center>
-      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -38,38 +33,20 @@ import axios from "axios";
 export default {
   data() {
     return {
-      timeout: 5000, //5 sec
       url: null,
       htmlData: null,
       urlImagesNum: 0,
       imgRegex: /<img.*\/>/g,
-      race_message: null,
     };
   },
-  // DONE zad 2; konsumirane na HTML; async koito vru6ta rezultat deto ne e void i da go vizualizirame; puska6 dva paralelni async Task-a; vtoriqt otbroqva vreme parallelno- rezultat koi e 1vi ; sledva6tiqt put pokazvam code-a, трябва да връща integer с броя изображения на уеб страницата
-  //modul 2 lab 2 -> 20 okt fcst.bg ;
 
   methods: {
     async submit() {
       if (this.url != null) {
-        // Call async functions in parallel
-        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race
-        Promise.race([
-          this.startCounter(this.timeout),
-          this.getPageAndCountImages(),
-        ]).then((res) => {
-          this.race_message = res;
-          // alert(res);
-        });
+        this.getPageAndCountImages();
       } else {
         alert("No url submitted");
       }
-    },
-    async startCounter(timeout) {
-      //https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-      return new Promise((resolve) => {
-        setTimeout(resolve, timeout, "Your time is up!");
-      });
     },
     async getPageAndCountImages() {
       let response = null;
