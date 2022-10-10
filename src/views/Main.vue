@@ -43,28 +43,21 @@ export default {
   methods: {
     async submit() {
       if (this.url != null) {
-        this.getPageAndCountImages();
+        let response = null;
+        const targetURL = this.url;
+        try {
+          // URL with no images: http://www.webcode.me/
+          response = await axios.get(targetURL);
+          if (response.status == 200) {
+            this.updateUI(response.data);
+          }
+          // console.log(response);
+        } catch (err) {
+          alert(err.toString());
+          // console.error(err);
+        }
       } else {
         alert("No url submitted");
-      }
-    },
-    async getPageAndCountImages() {
-      let response = null;
-      const targetURL = this.url;
-      try {
-        // http://192.168.56.1:3000
-        // Using another local server, because of CORS protocol
-        // URL with no images: http://www.webcode.me/
-        response = await axios.get(targetURL);
-        if (response.status == 200) {
-          this.updateUI(response.data);
-          return Promise.resolve("You didn't time out!");
-        }
-        // console.log(response);
-      } catch (err) {
-        alert(err.toString());
-        return Promise.resolve("Network error");
-        // console.error(err);
       }
     },
     updateUI(data) {
