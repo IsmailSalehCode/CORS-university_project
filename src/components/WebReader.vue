@@ -24,7 +24,9 @@
       <h2 v-text="urlImagesNum"></h2>
     </v-col>
     <v-col cols="12" v-if="error != null">
-      <p style="color: red">{{ error }}</p>
+      <v-alert border="left" elevation="3" type="error">
+        {{ error }}
+      </v-alert>
     </v-col>
   </v-row>
 </template>
@@ -36,22 +38,24 @@ export default {
     return {
       url: null,
       htmlData: null,
-      urlImagesNum: 0,
+      urlImagesNum: "-",
       imgRegex: /<img.*\/>/g,
       error: null,
     };
   },
 
   methods: {
-    clearError() {
+    resetData() {
       this.error = null;
+      this.htmlData = null;
+      this.urlImagesNum = "-";
     },
     setError(err) {
       this.error = err.toString();
     },
     async submit() {
-      // Clear error
-      this.clearError();
+      // Reset
+      this.resetData();
       // ===========
       if (this.url != null) {
         let response = null;
