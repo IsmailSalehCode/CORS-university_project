@@ -28,15 +28,15 @@
     </figure>
     <br />
     <p>
-      На localhost:8080 е хоствано
+      На localhost:<a href="/vocabulary?w=port">8080</a> е хоствано
       <a href="web-inspector" id="web-app-btn">уеб приложение</a>
       (горния десен прозорец), което чете
       <a href="/vocabulary?w=html">HTML</a>-a и броя снимки на подадения URL в
       полето „Target URL“. Тук сме подали URL към уеб-галерия, съдържаща 4
-      снимки и хоствана на порт 3000 (долния десен прозорец). След натискането
-      на <kbd>Enter</kbd>, read-only полето 'HTML data' се попълва с получения
-      HTML и броячът за снимки от 0 става на 4. Броят
-      <code>&lt;img&gt;</code> елементи в подадения URL e 4.
+      снимки и хоствана на <a href="/vocabulary?w=port">порт</a> 3000 (долния
+      десен прозорец). След натискането на <kbd>Enter</kbd>, read-only полето
+      'HTML data' се попълва с получения HTML и броячът за снимки от 0 става на
+      4. Броят <code>&lt;img&gt;</code> елементи в подадения URL e 4.
     </p>
     <p>
       Големият Прозорец отляво, наиме 'DevTools - localhost8080' е зададен да
