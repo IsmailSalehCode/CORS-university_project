@@ -17,7 +17,7 @@
     </p>
     <figure>
       <img
-        style="max-width: 950px"
+        style="max-width: 900px"
         src="../../media/cross-origin-request-successful.png"
         alt="Successful cross-origin request"
       />
