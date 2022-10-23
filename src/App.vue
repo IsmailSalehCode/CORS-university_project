@@ -24,8 +24,8 @@
     </v-main>
     <!-- Footer -->
     <v-footer bottom absolute app dark>
-      <v-col cols="12" sm="6">
-        <v-row>
+      <v-col cols="12">
+        <v-row style="text-align: center">
           <v-col style="font-size: 0.9rem">
             &#169; {{ new Date().getFullYear() }} -
             <strong>Исмаил Салех</strong> @
@@ -33,16 +33,21 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-divider class="d-none d-sm-block" vertical inset></v-divider>
-      <v-col cols="12" sm="6">
-        <v-row style="justify-content: end">
+      <v-col cols="12" style="padding-top: 0px">
+        <hr />
+      </v-col>
+      <v-col cols="12">
+        <v-row style="justify-content: center">
           <ul id="ico">
             <li
               v-for="social in socialMediaItems"
               :key="social.icon"
               style="padding-right: 20px"
             >
-              <a :href="social.path" target="_blank"
+              <a
+                :href="social.path"
+                target="_blank"
+                style="text-decoration: none"
                 ><v-icon>{{ social.icon }}</v-icon></a
               >
             </li>
@@ -130,6 +135,5 @@ html {
 }
 a {
   color: inherit !important;
-  text-decoration: none;
 }
 </style>
