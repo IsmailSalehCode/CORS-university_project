@@ -163,6 +163,5 @@ html {
 }
 a {
   color: inherit !important;
-  text-decoration-style: dotted;
 }
 </style>
