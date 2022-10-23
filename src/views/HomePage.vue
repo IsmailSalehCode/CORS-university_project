@@ -1,10 +1,6 @@
 <template>
   <v-container>
-    <article>
-      <h1>Cross-Origin Resource Sharing (CORS)</h1>
-      <p>Hello</p>
-      <p>Eyo</p>
-    </article>
+    <ArticleIntroCORS />
 
     <v-container>
       <WebReader />
@@ -14,8 +10,9 @@
 
 <script>
 import WebReader from "../components/WebReader.vue";
+import ArticleIntroCORS from "../components/ArticeIntroCORS.vue";
 export default {
-  components: { WebReader },
+  components: { WebReader, ArticleIntroCORS },
 };
 </script>
 
