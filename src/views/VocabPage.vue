@@ -2,8 +2,8 @@
   <v-container>
     <h1 style="text-align: center">Речник</h1>
 
-    <article>
-      <h2 id="http-header">HTTP header</h2>
+    <article id="http-header">
+      <h2>HTTP header</h2>
       <p>
         HTTP header е поле в HTTP заявка или отговор, което предава информация
         или метаданни за самата заявка или отговор (фиг. 1).
@@ -18,12 +18,38 @@
         </figcaption>
       </figure>
     </article>
+    <br />
+    <hr />
+    <br />
+    <article id="origin">
+      <h2>Origin</h2>
+      <p>Нека вземем следния URL:</p>
+      <p>
+        <span class="protocol">https://</span>
+        <span class="domain">instagram.com</span>
+        <span class="port">:443</span>
+        /ismails.2
+      </p>
+    </article>
   </v-container>
 </template>
 
 <script>
 export default {
   props: { word: String },
+  mounted() {
+    if (this.word != null) {
+      // console.log("called scroll");
+      setTimeout(() => {
+        const element = document.getElementById(this.word);
+        element.scrollIntoView({
+          behavior: "auto",
+          block: "center",
+          inline: "center",
+        });
+      }, 500);
+    }
+  },
   data() {
     return {
       //   vocabItems: [
@@ -39,6 +65,18 @@ export default {
 </script>
 
 <style>
+.protocol {
+  border-bottom: orange solid 3px;
+}
+
+.domain {
+  border-bottom: purple solid 3px;
+}
+
+.port {
+  border-bottom: cyan solid 3px;
+}
+
 figcaption {
   border-top: 1px solid black;
 }
