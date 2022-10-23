@@ -57,7 +57,7 @@
         <v-row style="text-align: center">
           <v-col style="font-size: 0.9rem">
             &#169; {{ new Date().getFullYear() }} -
-            <strong>Исмаил Салех</strong> @
+            <strong>Исмаил Салех</strong> от
             <a href="https://www.tu-sofia.bg/" target="_blank">ТY - София</a>.
           </v-col>
         </v-row>
@@ -100,6 +100,10 @@ export default {
         {
           title: "Начало",
           path: "/",
+        },
+        {
+          title: "Речник",
+          path: "/vocabulary",
         },
       ],
       socialMediaItems: [

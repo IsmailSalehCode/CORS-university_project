@@ -9,6 +9,9 @@ const routes = [
     path: "/",
     component: Home,
   },
+  {
+    path: "/vocabulary",
+  },
 ];
 
 const router = new VueRouter({
