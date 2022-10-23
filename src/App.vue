@@ -22,34 +22,27 @@
     </v-main>
     <!-- Footer -->
     <v-footer bottom absolute app dark>
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <v-row>
           <v-col style="font-size: 0.9rem">
             &#169; {{ new Date().getFullYear() }} -
-            <strong>Исмаил Салех</strong>&nbsp;
-            <a href="https://www.tu-sofia.bg/" target="_blank"
-              >Технически университет - София</a
-            >.
+            <strong>Исмаил Салех</strong> @
+            <a href="https://www.tu-sofia.bg/" target="_blank">ТY - София</a>.
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="6">
+      <v-divider class="d-none d-sm-block" vertical inset></v-divider>
+      <v-col cols="12" sm="6">
         <v-row style="justify-content: end">
           <ul id="ico">
-            <li style="padding-right: 20px">
-              <a href="https://www.facebook.com/ismail.saleh.921230"
-                ><v-icon>mdi-facebook</v-icon></a
+            <li
+              v-for="social in socialMediaItems"
+              :key="social.icon"
+              style="padding-right: 20px"
+            >
+              <a :href="social.path"
+                ><v-icon>{{ social.icon }}</v-icon></a
               >
-            </li>
-            <li style="padding-right: 20px">
-              <a href="https://www.instagram.com/ismails.2">
-                <v-icon>mdi-instagram</v-icon>
-              </a>
-            </li>
-            <li style="padding-right: 20px">
-              <a href="mailto:centriu78@gmail.com">
-                <v-icon>mdi-google</v-icon>
-              </a>
             </li>
           </ul>
         </v-row>
@@ -64,6 +57,28 @@ import HomePage from "./views/HomePage.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      socialMediaItems: [
+        {
+          icon: "mdi-github",
+          path: "https://github.com/IsmailSalehCode",
+        },
+        {
+          icon: "mdi-facebook",
+          path: "https://www.facebook.com/ismail.saleh.921230",
+        },
+        {
+          icon: "mdi-instagram",
+          path: "https://www.instagram.com/ismails.2",
+        },
+        {
+          icon: "mdi-gmail",
+          path: "mailto:centriu78@gmail.com",
+        },
+      ],
+    };
+  },
 
   components: {
     HomePage,
@@ -74,10 +89,6 @@ export default {
       this.$router.push("/").catch(() => {});
     },
   },
-
-  // data() {
-  //   //
-  // },
 };
 </script>
 
