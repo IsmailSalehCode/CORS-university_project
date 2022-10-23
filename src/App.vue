@@ -160,6 +160,8 @@ h1 {
 }
 p {
   margin: 1rem 0 2rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 html {
   overflow-y: auto;
