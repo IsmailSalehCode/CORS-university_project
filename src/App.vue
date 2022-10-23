@@ -96,7 +96,7 @@ export default {
       drawer: false,
       menuItems: [
         {
-          title: "Начало",
+          title: "Същност",
           path: "/",
         },
         {
