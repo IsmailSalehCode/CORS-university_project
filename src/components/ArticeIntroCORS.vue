@@ -48,6 +48,17 @@
       Тъй като в сървъра на localhost:3000 е подходящо конфигуриран CORS (фиг.
       {{ correctly_configured_cors_figure_num }}):
     </p>
+    <figure>
+      <img
+        style="max-width: 1000px"
+        src="../../media/properly-configured-cors.png"
+        alt="Properly configured CORS"
+      />
+      <figcaption>
+        Фиг. {{ correctly_configured_cors_figure_num }} Подходящо конфигуриран
+        CORS на Node сървър
+      </figcaption>
+    </figure>
   </article>
 </template>
 
