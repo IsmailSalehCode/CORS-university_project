@@ -162,7 +162,7 @@ html {
   scroll-behavior: smooth;
 }
 a {
-  color: red !important;
+  color: inherit !important;
   text-decoration-style: dotted;
 }
 </style>
