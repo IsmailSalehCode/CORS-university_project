@@ -12,7 +12,7 @@
     </p>
     <p>
       Това споделяне на ресурси от различни източници се постига чрез
-      <b>cross-origin</b> заявки (Фиг.
+      <b>cross-origin</b> заявки (фиг.
       {{ cross_origin_request_successful_figure_num }}).
     </p>
     <figure>
