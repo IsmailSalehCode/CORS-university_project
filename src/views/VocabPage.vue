@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1 style="text-align: center">Речник</h1>
-
+    <br />
     <article id="http-header">
       <h2>HTTP header</h2>
       <p>
@@ -29,6 +29,15 @@
         <span class="domain">instagram.com</span>
         <span class="port">:443</span>
         /ismails.2
+      </p>
+      <p>
+        Origin/произходът се формира от използвания
+        <span class="protocol">протокол</span> (напр. https://) +
+        <span class="domain">домейн</span> (напр. instagram.com) +
+        <span class="port">порт</span> (напр. 443- портът по подразбиране за
+        https адреси). Следователно адреси като
+        https://instagram.com/kleveontin, https://instagram.com/ismails.2,
+        https://www.instagram.com/direct/inbox/ имат един и същ произход.
       </p>
     </article>
   </v-container>
