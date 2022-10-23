@@ -12,13 +12,31 @@
     </p>
     <p>
       Това споделяне на ресурси от различни източници се постига чрез
-      <b>cross-origin</b> заявки
+      <b>cross-origin</b> заявки (Фиг.
+      {{ cross_origin_request_successful_figure_num }}).
     </p>
+    <figure>
+      <img
+        style="max-width: 950px"
+        src="../../media/cross-origin-request-successful.png"
+        alt="Successful cross-origin request"
+      />
+      <figcaption>
+        Фиг. {{ cross_origin_request_successful_figure_num }} Успешна
+        cross-origin заявка
+      </figcaption>
+    </figure>
   </article>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      cross_origin_request_successful_figure_num: 1,
+    };
+  },
+};
 </script>
 
 <style>
