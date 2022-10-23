@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- Menu -->
     <v-app-bar id="appBar" app>
       <v-toolbar-title @click="redirectToMain" class="pointerOnHover">
         <span id="prTitle"> CORS </span>
@@ -17,6 +18,7 @@
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
+    <!-- End of Menu -->
     <v-main>
       <HomePage />
     </v-main>
@@ -59,6 +61,12 @@ export default {
   name: "App",
   data() {
     return {
+      menuItems: [
+        {
+          title: "Начало",
+          path: "/",
+        },
+      ],
       socialMediaItems: [
         {
           icon: "mdi-github",
