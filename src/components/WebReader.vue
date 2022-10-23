@@ -1,33 +1,35 @@
 <template>
-  <v-row>
-    <v-col>
-      <v-text-field
-        outlined
-        style="max-width: 300px"
-        @keydown.enter="submit"
-        v-model.trim="url"
-        label="Въведете URL"
-        clearable
-      ></v-text-field>
-    </v-col>
-    <v-col cols="12">
-      <v-textarea
-        clearable
-        outlined
-        label="HTML данни"
-        readonly
-        v-model="htmlData"
-      ></v-textarea>
-    </v-col>
-    <v-col cols="12">
-      <h3>Броят изображения в зададения URL е...</h3>
-      <h2 v-text="urlImagesNum"></h2>
-    </v-col>
-    <v-col cols="12" v-if="error == true">
-      <v-alert border="left" elevation="3" type="error">
-        Възникна грешка. Натиснете F12 за инспекция на конзолата.
-      </v-alert>
-    </v-col>
+  <v-row style="justify-content: center">
+    <v-sheet outlined rounded="xl" width="600px">
+      <v-col>
+        <v-text-field
+          outlined
+          style="max-width: 300px"
+          @keydown.enter="submit"
+          v-model.trim="url"
+          label="Въведете URL"
+          clearable
+        ></v-text-field>
+      </v-col>
+      <v-col cols="12">
+        <v-textarea
+          clearable
+          outlined
+          label="HTML данни"
+          readonly
+          v-model="htmlData"
+        ></v-textarea>
+      </v-col>
+      <v-col cols="12">
+        <h3>Броят изображения в зададения URL е...</h3>
+        <h2 v-text="urlImagesNum"></h2>
+      </v-col>
+      <v-col cols="12" v-if="error == true">
+        <v-alert border="left" elevation="3" type="error">
+          Възникна грешка. Натиснете F12 за инспекция на конзолата.
+        </v-alert>
+      </v-col>
+    </v-sheet>
   </v-row>
 </template>
 
