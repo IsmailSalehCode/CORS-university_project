@@ -86,6 +86,8 @@
       <figcaption>Фиг. {{ any_port_cors_figure_num }}</figcaption>
     </figure>
     <br />
+    <hr />
+    <br />
     <ArticleSOP />
   </article>
 </template>

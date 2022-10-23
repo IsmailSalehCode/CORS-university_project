@@ -1,14 +1,14 @@
 <template>
   <v-container>
-    <ArticleIntroCORS />
+    <ArticleCORS />
   </v-container>
 </template>
 
 <script>
-import ArticleIntroCORS from "../components/ArticeIntroCORS.vue";
+import ArticleCORS from "../components/ArticeCORS.vue";
 export default {
   components: {
-    ArticleIntroCORS,
+    ArticleCORS,
   },
 };
 </script>
