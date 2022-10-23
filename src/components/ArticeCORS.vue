@@ -3,11 +3,10 @@
     <h1>Cross-Origin Resource Sharing</h1>
     <p>
       <b>Cross-Origin Resource Sharing</b> (<b>CORS</b> за накратко) е
-      <a href="/vocabulary?w=http-header">HTTP header</a>-базиран механизъм,
-      който позволява на един сървър да посочи дестинациите (<a
-        href="/vocabulary?w=origin"
-        >origins</a
-      >), различни от своите, от които един клиентски браузър може да достъпва
+      <a class="vocab-redirect" href="/vocabulary?w=http-header">HTTP header</a
+      >-базиран механизъм, който позволява на един сървър да посочи дестинациите
+      (<a class="vocab-redirect" href="/vocabulary?w=origin">origins</a>),
+      различни от своите, от които един клиентски браузър може да достъпва
       ресурсите му.
     </p>
     <p>
@@ -28,12 +27,14 @@
     </figure>
     <br />
     <p>
-      На localhost:<a href="/vocabulary?w=port">8080</a> е хоствано
+      На localhost:<a class="vocab-redirect" href="/vocabulary?w=port">8080</a>
+      е хоствано
       <a href="web-inspector" id="web-app-btn">уеб приложение</a>
       (горния десен прозорец), което чете
-      <a href="/vocabulary?w=html">HTML</a>-a и броя снимки на подадения URL в
-      полето „Target URL“. Тук сме подали URL към уеб-галерия, съдържаща 4
-      снимки и хоствана на <a href="/vocabulary?w=port">порт</a> 3000 (долния
+      <a class="vocab-redirect" href="/vocabulary?w=html">HTML</a>-a и броя
+      снимки на подадения URL в полето „Target URL“. Тук сме подали URL към
+      уеб-галерия, съдържаща 4 снимки и хоствана на
+      <a class="vocab-redirect" href="/vocabulary?w=port">порт</a> 3000 (долния
       десен прозорец). След натискането на <kbd>Enter</kbd>, read-only полето
       'HTML data' се попълва с получения HTML и броячът за снимки от 0 става на
       4. Броят <code>&lt;img&gt;</code> елементи в подадения URL e 4.
@@ -109,6 +110,7 @@ export default {
 <style scoped>
 #web-app-btn {
   font-weight: bold;
+  color: black;
   border: black 2px solid;
   border-radius: 5px;
   padding: 4px;

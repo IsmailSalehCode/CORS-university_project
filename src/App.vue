@@ -58,7 +58,9 @@
           <v-col style="font-size: 0.9rem">
             &#169; {{ new Date().getFullYear() }} -
             <strong>Исмаил Салех</strong> от
-            <a href="https://www.tu-sofia.bg/" target="_blank">ТY - София</a>.
+            <a href="https://www.tu-sofia.bg/" target="_blank"
+              >Технически университет - София</a
+            >.
           </v-col>
         </v-row>
       </v-col>
@@ -167,7 +169,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
-a {
-  color: inherit !important;
+.vocab-redirect {
+  color: crimson !important;
 }
 </style>
