@@ -40,7 +40,7 @@
               :key="social.icon"
               style="padding-right: 20px"
             >
-              <a :href="social.path"
+              <a :href="social.path" target="_blank"
                 ><v-icon>{{ social.icon }}</v-icon></a
               >
             </li>
