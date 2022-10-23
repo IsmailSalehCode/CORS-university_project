@@ -1,6 +1,7 @@
 {
-  "name": "modul-2-lab-1",
-  "version": "0.1.0",
+  "name": "cors_project",
+  "author": "Ismail Saleh",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,6 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "vue-router": "^3.5.2",
     "axios": "^1.0.0",
     "core-js": "^3.8.3",
     "https": "^1.0.0",

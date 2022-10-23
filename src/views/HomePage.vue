@@ -1,6 +1,10 @@
 <template>
   <v-container>
-    <div id=""></div>
+    <article>
+      <h1>Cross-Origin Resource Sharing (CORS)</h1>
+      <p>Hello</p>
+      <p>Eyo</p>
+    </article>
 
     <v-container>
       <WebReader />

@@ -21,3 +21,13 @@ export default {
   }),
 };
 </script>
+
+<style>
+h1 {
+  margin-bottom: 2rem;
+  word-break: break-word;
+}
+p {
+  margin: 1rem 0 2rem;
+}
+</style>
