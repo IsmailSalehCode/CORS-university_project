@@ -104,7 +104,7 @@ export default {
           path: "/vocabulary",
         },
         {
-          title: "Уеб приложение",
+          title: "Уеб инспектор",
           path: "/web-inspector",
         },
       ],
