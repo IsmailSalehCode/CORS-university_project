@@ -64,6 +64,11 @@
         хипертекстови препратки и т.н. Най-често HTML елементите са групирани по
         двойки <code>&lt;h1&gt;</code> и <code>&lt;/h1&gt;</code>.
       </p>
+      <p>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+          >Научи повече тук...</a
+        >
+      </p>
     </article>
   </v-container>
 </template>
