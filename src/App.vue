@@ -99,8 +99,8 @@ ul#ico {
 }
 #prTitle {
   color: white;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
   letter-spacing: 5px;
 }
 #appBar {
