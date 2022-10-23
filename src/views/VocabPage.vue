@@ -6,7 +6,8 @@
       <h2>HTTP header</h2>
       <p>
         HTTP header е поле в HTTP заявка или отговор, което предава информация
-        или метаданни за самата заявка или отговор (фиг. 1).
+        или метаданни за самата заявка или отговор (фиг.
+        {{ http_header_figure_num }}).
       </p>
       <figure>
         <img
@@ -14,7 +15,8 @@
           alt="sample http headers in client-server communication"
         />
         <figcaption>
-          Фиг. 1 HTTP header-и под стрелките на комуникацията Client-Server
+          Фиг. {{ http_header_figure_num }} HTTP header-и под стрелките на
+          комуникацията Client-Server
         </figcaption>
       </figure>
     </article>
@@ -61,6 +63,7 @@ export default {
   },
   data() {
     return {
+      http_header_figure_num: 2,
       //   vocabItems: [
       //     {
       //       word: "HTTP header",
