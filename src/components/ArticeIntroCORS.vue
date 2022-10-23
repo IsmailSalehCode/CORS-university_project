@@ -26,6 +26,14 @@
         cross-origin заявка
       </figcaption>
     </figure>
+    <br />
+    <p>
+      На localhost:8080 е хоствано уеб приложение, което чете HTML-a и броя
+      снимки на подадения URL в полето „Target URL“. Тук сме подали URL към
+      уеб-галерия, съдържаща 4 снимки и хоствана на порт 3000. Тъй като в
+      сървъра на localhost:3000 е подходящо конфигуриран CORS (фиг.
+      {{ correctly_configured_cors_figure_num }}):
+    </p>
   </article>
 </template>
 
@@ -34,6 +42,7 @@ export default {
   data() {
     return {
       cross_origin_request_successful_figure_num: 1,
+      correctly_configured_cors_figure_num: 3,
     };
   },
 };

@@ -103,6 +103,10 @@ export default {
           title: "Речник",
           path: "/vocabulary",
         },
+        {
+          title: "Уеб приложение",
+          path: "/web-inspector",
+        },
       ],
       socialMediaItems: [
         {

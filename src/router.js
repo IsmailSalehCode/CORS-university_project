@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "./views/HomePage.vue";
 import Vocab from "./views/VocabPage.vue";
+import WebInspector from "./views/WebInspector.vue";
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,10 @@ const routes = [
     path: "/vocabulary",
     component: Vocab,
     props: (route) => ({ word: route.query.w }),
+  },
+  {
+    path: "/web-inspector",
+    component: WebInspector,
   },
 ];
 
