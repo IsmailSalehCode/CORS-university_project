@@ -97,18 +97,30 @@
       <h2>Инструменти за разработка</h2>
       <p>
         Всеки съвременен уеб браузър включва мощен пакет от инструменти за
-        разработчици. Тези инструменти правят огромен набор от операции като
-        проверка на текущо заредените HTML, CSS и JavaScript, показване кои
-        ресурси е поискала страницата, последователността и продължителността на
-        зареждането им, как се използва паметта, съхранени данни в браузъра
-        (local storage, session storage, cookies, cache), различни типове
-        съобщения и т.н.
+        разработчици. Тези инструменти правят огромен набор от анализационни
+        операции възможен като проверка на текущо заредените HTML, CSS и
+        JavaScript, показване кои ресурси е поискала страницата,
+        последователността и продължителността на зареждането им, как се
+        използва паметта, съхранени данни в браузъра (local storage, session
+        storage, cookies, cache), различни типове съобщения и т.н.
       </p>
       <p>
         За Google Chrome тези инструменти се назовават <i>Chrome Dev Tools</i>.
         Отварят се с натискане на <kbd>F12</kbd> или <kbd>Right Click</kbd> ->
         <kbd>Inspect</kbd>
       </p>
+      <figure>
+        <v-container>
+          <v-img
+            contain
+            src="../../media/dev-tools.png"
+            alt="Writing and executing simple code in the browser"
+          />
+        </v-container>
+        <figcaption>
+          Писане и екзекутиране на елементарен код в браузъра
+        </figcaption>
+      </figure>
       <p>
         <a
           href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
