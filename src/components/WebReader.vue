@@ -1,6 +1,6 @@
 <template>
   <v-row style="justify-content: center">
-    <v-sheet outlined rounded="xl" width="600px">
+    <v-sheet outlined rounded="xl" width="700px">
       <v-col>
         <v-text-field
           outlined

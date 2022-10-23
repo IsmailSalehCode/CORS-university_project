@@ -26,7 +26,7 @@
     </v-app-bar>
     <!-- End of Menu -->
     <v-main>
-      <HomePage />
+      <router-view></router-view>
     </v-main>
     <!-- Mobile Menu -->
     <v-navigation-drawer
@@ -89,8 +89,6 @@
 </template>
 
 <script>
-import HomePage from "./views/HomePage.vue";
-
 export default {
   name: "App",
   data() {
@@ -125,10 +123,6 @@ export default {
         },
       ],
     };
-  },
-
-  components: {
-    HomePage,
   },
 
   methods: {
@@ -168,7 +162,7 @@ html {
   scroll-behavior: smooth;
 }
 a {
-  color: inherit !important;
+  color: red !important;
   text-decoration-style: dotted;
 }
 </style>
