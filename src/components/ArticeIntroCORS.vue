@@ -83,13 +83,17 @@
         src="../../media/any-port-wildcard.png"
         alt="Access-Control-Allow-Origin: Any port (*)"
       />
-      <figcaption>Фиг. 3.5</figcaption>
+      <figcaption>Фиг. {{ any_port_cors_figure_num }}</figcaption>
     </figure>
+    <br />
+    <ArticleSOP />
   </article>
 </template>
 
 <script>
+import ArticleSOP from "./ArticleSingleOriginPolicy.vue";
 export default {
+  components: { ArticleSOP },
   data() {
     return {
       cross_origin_request_successful_figure_num: 1,
