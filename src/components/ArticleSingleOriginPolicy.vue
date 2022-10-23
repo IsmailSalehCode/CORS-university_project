@@ -26,6 +26,23 @@
       съобщение ни дава информация, че нашата GET заявка бе успешно получена (
       => код 200 ОК), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
+    <p>
+      Ръчно блокиране на външни скриптове да достъпват ресурсите на сървър с
+      определен порт на localhost- в случая порт 3000 (фиг.
+      {{ manual_sop_config_figure_num }}):
+    </p>
+    <figure>
+      <img
+        style="max-width: 500px"
+        src="../../media/manual-sop-config.png"
+        alt="настройване сървъра на уеб галерията да следва same-origin policy, т.е само и единствено вътрешни скриптове да взаимодействат с route-овете на http://localhost:3000"
+      />
+      <figcaption>
+        Фиг. {{ manual_sop_config_figure_num }}- настройване сървъра на уеб
+        галерията да следва same-origin policy, т.е само и единствено вътрешни
+        скриптове да взаимодействат с route-овете на http://localhost:3000
+      </figcaption>
+    </figure>
   </article>
 </template>
 
@@ -34,6 +51,7 @@ export default {
   data() {
     return {
       default_sop_errors_figure_num: 4,
+      manual_sop_config_figure_num: 5,
     };
   },
 };
