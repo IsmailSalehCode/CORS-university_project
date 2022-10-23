@@ -6,10 +6,10 @@
           <v-col>
             <v-text-field
               outlined
-              style="max-width: 300px"
+              style="max-width: 400px"
               @keydown.enter="submit"
               v-model.trim="url"
-              label="Въведете URL"
+              label="Въведете URL и натиснете Enter"
               clearable
             ></v-text-field>
           </v-col>

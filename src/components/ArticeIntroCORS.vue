@@ -17,7 +17,7 @@
     </p>
     <figure>
       <img
-        style="max-width: 900px"
+        style="max-width: 1000px"
         src="../../media/cross-origin-request-successful.png"
         alt="Successful cross-origin request"
       />
@@ -29,12 +29,23 @@
     <br />
     <p>
       На localhost:8080 е хоствано
-      <v-btn outlined to="/web-inspector"> уеб приложение </v-btn>
-
-      , което чете <a href="/vocabulary?w=html">HTML</a>-a и броя снимки на
-      подадения URL в полето „Target URL“. Тук сме подали URL към уеб-галерия,
-      съдържаща 4 снимки и хоствана на порт 3000. Тъй като в сървъра на
-      localhost:3000 е подходящо конфигуриран CORS (фиг.
+      <a href="web-inspector">уеб приложение</a>
+      (горния десен прозорец), което чете
+      <a href="/vocabulary?w=html">HTML</a>-a и броя снимки на подадения URL в
+      полето „Target URL“. Тук сме подали URL към уеб-галерия, съдържаща 4
+      снимки и хоствана на порт 3000 (долния десен прозорец). След натискането
+      на <kbd>Enter</kbd>, read-only полето 'HTML data' се попълва с получения
+      HTML и броячът за снимки от 0 става на 4. Броят
+      <code>&lt;img&gt;</code> елементи в подадения URL e 4.
+    </p>
+    <p>
+      Големият Прозорец отляво, наиме 'DevTools - localhost8080' е зададен да
+      изобразява Network активността на гореописаната операция. Документирано е,
+      че от Origin localhost:8080 успешно се инвокирал GET метод на Host с адрес
+      localhost:3000
+    </p>
+    <p>
+      Тъй като в сървъра на localhost:3000 е подходящо конфигуриран CORS (фиг.
       {{ correctly_configured_cors_figure_num }}):
     </p>
   </article>
