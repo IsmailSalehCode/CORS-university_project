@@ -17,11 +17,40 @@
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
+      <!-- Mobile Menu Btn -->
+      <span class="hidden-md-and-up">
+        <v-app-bar-nav-icon dark right @click="drawer = !drawer">
+        </v-app-bar-nav-icon>
+      </span>
+      <!-- End of Mobile Menu Btn -->
     </v-app-bar>
     <!-- End of Menu -->
     <v-main>
       <HomePage />
     </v-main>
+    <!-- Mobile Menu -->
+    <v-navigation-drawer
+      app
+      color="rgb(14, 14, 14)"
+      v-model="drawer"
+      dark
+      right
+      temporary
+    >
+      <v-list nav>
+        <v-list-item
+          v-for="item in menuItems"
+          :key="item.title"
+          :to="item.path"
+          link
+        >
+          <v-list-item-content :style="{ 'text-align': 'center' }">
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <!-- End of Mobile Menu -->
     <!-- Footer -->
     <v-footer bottom absolute app dark>
       <v-col cols="12">
@@ -66,6 +95,7 @@ export default {
   name: "App",
   data() {
     return {
+      drawer: false,
       menuItems: [
         {
           title: "Начало",
