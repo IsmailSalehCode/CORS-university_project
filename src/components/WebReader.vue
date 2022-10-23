@@ -6,7 +6,7 @@
         style="max-width: 300px"
         @keydown.enter="submit"
         v-model.trim="url"
-        label="Target URL"
+        label="Въведете URL"
         clearable
       ></v-text-field>
     </v-col>
@@ -14,18 +14,18 @@
       <v-textarea
         clearable
         outlined
-        label="HTML data"
+        label="HTML данни"
         readonly
         v-model="htmlData"
       ></v-textarea>
     </v-col>
     <v-col cols="12">
-      <h3>Number of images in your URL is...</h3>
+      <h3>Броят изображения в зададения URL е...</h3>
       <h2 v-text="urlImagesNum"></h2>
     </v-col>
     <v-col cols="12" v-if="error == true">
       <v-alert border="left" elevation="3" type="error">
-        Error occured. Press F12 to inspect console.
+        Възникна грешка. Натиснете F12 за инспекция на конзолата.
       </v-alert>
     </v-col>
   </v-row>
