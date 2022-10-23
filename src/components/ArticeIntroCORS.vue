@@ -29,7 +29,7 @@
     <br />
     <p>
       На localhost:8080 е хоствано
-      <a href="web-inspector">уеб приложение</a>
+      <a href="web-inspector" id="web-app-btn">уеб приложение</a>
       (горния десен прозорец), което чете
       <a href="/vocabulary?w=html">HTML</a>-a и броя снимки на подадения URL в
       полето „Target URL“. Тук сме подали URL към уеб-галерия, съдържаща 4
@@ -42,7 +42,7 @@
       Големият Прозорец отляво, наиме 'DevTools - localhost8080' е зададен да
       изобразява Network активността на гореописаната операция. Документирано е,
       че от Origin localhost:8080 успешно се инвокирал GET метод на Host с адрес
-      localhost:3000
+      localhost:3000 .
     </p>
     <p>
       Тъй като в сървъра на localhost:3000 е подходящо конфигуриран CORS (фиг.
@@ -100,5 +100,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+#web-app-btn {
+  font-weight: bold;
+  border: black 2px solid;
+  border-radius: 5px;
+  padding: 4px;
+  text-decoration: none;
+}
 </style>
