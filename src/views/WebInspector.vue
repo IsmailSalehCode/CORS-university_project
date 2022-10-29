@@ -74,7 +74,7 @@ export default {
           this.error = true;
         }
       } else {
-        alert("No url submitted");
+        alert("No URL submitted");
       }
     },
     updateUI(data) {
