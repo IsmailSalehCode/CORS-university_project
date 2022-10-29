@@ -86,14 +86,20 @@
     <hr />
     <br />
     <ArticleSOP />
+    <br />
+    <hr />
+    <br />
+    <ArticleCORSTypes />
   </article>
 </template>
 
 <script>
 import ArticleSOP from "./ArticleSingleOriginPolicy.vue";
 import Figure from "./FigureDialog.vue";
+import ArticleCORSTypes from "./ArticleCORS_Types.vue";
+
 export default {
-  components: { ArticleSOP, Figure },
+  components: { ArticleSOP, Figure, ArticleCORSTypes },
   data() {
     return {
       cross_origin_request_successful_figureNum: 1,
