@@ -107,18 +107,13 @@
         Отварят се с натискане на <kbd>F12</kbd> или <kbd>Right Click</kbd> ->
         <kbd>Inspect</kbd>
       </p>
-      <figure>
-        <v-container>
-          <v-img
-            contain
-            src="../../media/dev-tools.png"
-            alt="Writing and executing simple code in the browser"
-          />
-        </v-container>
-        <figcaption>
-          Писане и екзекутиране на елементарен код в браузъра
-        </figcaption>
-      </figure>
+      <Figure
+        :figureNum="dev_tools_figureNum"
+        :imgData="dev_tools_figure"
+        figureCaption="Писане и екзекутиране на елементарен код в браузъра"
+        altCaption="Writing and executing simple code in the browser"
+        maxWidthImg="900px"
+      />
       <p>
         <a
           href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
@@ -153,7 +148,7 @@ export default {
     return {
       http_header_figureNum: 2,
       http_header_figure: require("../../media/http-headers.png"),
-      dev_tools_figreNum: 6,
+      dev_tools_figureNum: 6,
       dev_tools_figure: require("../../media/dev-tools.png"),
     };
   },

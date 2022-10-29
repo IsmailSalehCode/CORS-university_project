@@ -1,10 +1,10 @@
 <template>
-  <v-container>
+  <div>
     <figure>
       <img :src="imgData" :alt="altCaption" :style="maxWidthString" />
       <figcaption>Фиг. {{ figureNum }} | {{ figureCaption }}</figcaption>
     </figure>
-  </v-container>
+  </div>
 </template>
 
 <script>
