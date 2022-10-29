@@ -75,14 +75,13 @@
       достъпни от който и да е порт на localhost (фиг.
       {{ any_port_cors_figureNum }}).
     </p>
-    <figure>
-      <img
-        style="max-width: 600px"
-        src="../../media/any-port-wildcard.png"
-        alt="Access-Control-Allow-Origin: Any port (*)"
-      />
-      <figcaption>Фиг. {{ any_port_cors_figureNum }}</figcaption>
-    </figure>
+    <Figure
+      :figureNum="any_port_cors_figureNum"
+      :imgData="any_port_cors_figure"
+      figureCaption="Този GET route на http://localhost:3000 е достъпен за всеки порт на localhost"
+      altCaption="Access-Control-Allow-Origin: Any port (*)"
+      maxWidthImg="700px"
+    />
     <br />
     <hr />
     <br />

@@ -175,18 +175,4 @@ export default {
 .port {
   border-bottom: cyan solid 3px;
 }
-
-figcaption {
-  border-top: 1px solid black;
-}
-figure {
-  padding: 10px 15px 10px 15px;
-  width: fit-content;
-  outline-color: black;
-  outline-width: 2px;
-  outline-style: solid;
-}
-figcaption {
-  font-style: italic;
-}
 </style>

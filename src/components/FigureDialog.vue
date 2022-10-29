@@ -2,7 +2,7 @@
   <v-container>
     <figure>
       <img :src="imgData" :alt="altCaption" :style="maxWidthString" />
-      <figcaption>Фиг. {{ figureNum }} {{ figureCaption }}</figcaption>
+      <figcaption>Фиг. {{ figureNum }} | {{ figureCaption }}</figcaption>
     </figure>
   </v-container>
 </template>
@@ -26,4 +26,17 @@ export default {
 </script>
 
 <style>
+figcaption {
+  border-top: 1px solid black;
+}
+figure {
+  padding: 10px 15px 10px 15px;
+  width: fit-content;
+  outline-color: black;
+  outline-width: 2px;
+  outline-style: solid;
+}
+figcaption {
+  font-style: italic;
+}
 </style>
