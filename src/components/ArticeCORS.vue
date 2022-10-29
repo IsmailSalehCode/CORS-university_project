@@ -14,17 +14,13 @@
       <b>cross-origin</b> заявки (фиг.
       {{ cross_origin_request_successful_figure_num }}).
     </p>
-    <figure>
-      <img
-        style="max-width: 1000px"
-        src="../../media/cross-origin-request-successful.png"
-        alt="Successful cross-origin request"
-      />
-      <figcaption>
-        Фиг. {{ cross_origin_request_successful_figure_num }} Успешна
-        cross-origin заявка
-      </figcaption>
-    </figure>
+    <Figure
+      :figureNum="cross_origin_request_successful_figure_num"
+      figureCaption="Успешна cross-origin заявка"
+      :imgData="cross_origin_request_successful_figure"
+      altCaption="Successful cross-origin request"
+      maxWidthImg="900px"
+    />
     <br />
     <p>
       На localhost:<a class="vocab-redirect" href="/vocabulary?w=port">8080</a>
@@ -99,11 +95,13 @@
 
 <script>
 import ArticleSOP from "./ArticleSingleOriginPolicy.vue";
+import Figure from "./FigureDialog.vue";
 export default {
-  components: { ArticleSOP },
+  components: { ArticleSOP, Figure },
   data() {
     return {
       cross_origin_request_successful_figure_num: 1,
+      cross_origin_request_successful_figure: require("../../media/cross-origin-request-successful.png"),
       correctly_configured_cors_figure_num: 3,
       any_port_cors_figure_num: 3.5,
     };

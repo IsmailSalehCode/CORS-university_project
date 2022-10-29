@@ -1,6 +1,9 @@
 <template>
   <v-container>
     <ArticleCORS />
+    <!-- typove cors zaqvki -->
+    <!-- preflight -->
+    <!-- za6to CORS su6testvuva -->
   </v-container>
 </template>
 
