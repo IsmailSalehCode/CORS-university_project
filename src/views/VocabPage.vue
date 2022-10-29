@@ -10,30 +10,7 @@
     <br />
     <hr />
     <br />
-    <article id="port">
-      <h2>Порт (Port)</h2>
-      <p>
-        Мрежовият порт е софтуерна абстракция служеща за определяне на
-        различните крайни точки на комуникационните канали в рамките на един
-        хост. Номерът на порт винаги е свързан с IP адрес на хост и вида на
-        транспортния протокол, използван за комуникация. Той допълва мрежовия
-        адрес на местоназначението или източника на съобщение. Конкретни номера
-        на портове са запазени за идентифициране на конкретни услуги, така че
-        пристигащият пакет да може лесно да бъде препратен към работещо
-        приложение. За тази цел номерата на портове, по-ниски от 1024,
-        идентифицират исторически най-често използваните услуги и се наричат
-        добре известни номера на портове. Портовете с по-високи номера са
-        достъпни за обща употреба от приложения и са известни като ефемерни
-        портове.
-      </p>
-      <p>
-        <a
-          href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
-          target="_blank"
-          >Научи повече тук...</a
-        >
-      </p>
-    </article>
+    <PortArticle id="port" />
     <br />
     <hr />
     <br />
@@ -95,10 +72,16 @@
 import DevToolsArticle from "../components/DevToolsArticle.vue";
 import HttpHeaderArticle from "../components/HttpHeaderArticle.vue";
 import HttpStatusArticle from "../components/HttpStatusArticle.vue";
+import PortArticle from "../components/PortArticle.vue";
 
 export default {
   props: { word: String },
-  components: { DevToolsArticle, HttpHeaderArticle, HttpStatusArticle },
+  components: {
+    PortArticle,
+    DevToolsArticle,
+    HttpHeaderArticle,
+    HttpStatusArticle,
+  },
   mounted() {
     if (this.word != null) {
       // console.log("called scroll");
