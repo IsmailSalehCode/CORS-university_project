@@ -138,7 +138,7 @@
       <Figure
         :figureNum="dev_tools_figureNum"
         :imgData="dev_tools_figure"
-        figureCaption="Писане и екзекутиране на елементарен код в браузъра"
+        figureCaption="Писане и екзекутиране на елементарен код в браузъра (Google Chrome в случая)"
         altCaption="Writing and executing simple code in the browser"
         maxWidthImg="900px"
       />
