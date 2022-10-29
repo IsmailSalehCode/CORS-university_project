@@ -125,8 +125,6 @@
         Както се вижда на фигурата, има и други Tab-ове в най-горната лента
         (Elements, Sources, Network, Performance, Memory, etc...), които
         притежават различни инструменти за гореспоменатите цели.
-      </p>
-      <p>
         <a
           href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
           target="_blank"
