@@ -23,10 +23,11 @@
         <a href="https://fetch.spec.whatwg.org/#cors-safelisted-request-header"
           >CORS safe-listed</a
         >
-        заглавка се използва.
+        заглавка се използва:
+        <code>Accept, Accept-Language, Content-Language, Content-Type</code>.
       </li>
       <li>
-        Когато се модифицира заглавката Content-Type, са разрешени само следните
+        Когато присъства заглавката Content-Type, са разрешени само следните
         стойности: <code>application/x-www-form-urlencoded</code>,
         <code>multipart/form-data</code> или <code>text/plain</code>.
       </li>
