@@ -6,30 +6,7 @@
     <br />
     <hr />
     <br />
-    <article id="http-status">
-      <h2>HTTP статус (Status)</h2>
-      <p>
-        Кодовете за състояние на HTTP отговор показват дали конкретна HTTP
-        заявка е изпълнена успешно. Отговорите са групирани в пет класа според
-        <a href="https://httpwg.org/specs/rfc9110.html#overview.of.status.codes"
-          >RFC9110</a
-        >
-        стандарта:
-      </p>
-      <ol>
-        <li>Информационни ( <code>100</code> - <code>199</code> )</li>
-        <li>Успешни ( <code>200</code> - <code>299</code> )</li>
-        <li>
-          Съобщения за пренасочване( <code>300</code> - <code>399</code> )
-        </li>
-        <li>
-          Клиентски отговори за грешки ( <code>400</code> - <code>499</code> )
-        </li>
-        <li>
-          Отговори за грешка на сървъра ( <code>500</code> - <code>599</code> )
-        </li>
-      </ol>
-    </article>
+    <HttpStatusArticle id="http-status" />
     <br />
     <hr />
     <br />
@@ -117,10 +94,11 @@
 <script>
 import DevToolsArticle from "../components/DevToolsArticle.vue";
 import HttpHeaderArticle from "../components/HttpHeaderArticle.vue";
+import HttpStatusArticle from "../components/HttpStatusArticle.vue";
 
 export default {
   props: { word: String },
-  components: { DevToolsArticle, HttpHeaderArticle },
+  components: { DevToolsArticle, HttpHeaderArticle, HttpStatusArticle },
   mounted() {
     if (this.word != null) {
       // console.log("called scroll");

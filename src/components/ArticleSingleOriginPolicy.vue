@@ -23,7 +23,7 @@
       липсва Access-Control-Allow-Origin заглавка в отговора на сървъра. Второто
       error съобщение ни дава информация, че нашата GET заявка бе успешно
       получена ( =>
-      <a class="vocab-redirect" href="/vocabulary?w=http-header"
+      <a class="vocab-redirect" href="/vocabulary?w=http-status"
         >HTTP код 200 ОК</a
       >), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
