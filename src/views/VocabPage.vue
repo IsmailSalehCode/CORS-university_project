@@ -3,7 +3,7 @@
     <h1 style="text-align: center">Речник</h1>
     <br />
     <article id="http-header">
-      <h2>HTTP заглавка (header)</h2>
+      <h2>HTTP заглавка (Header)</h2>
       <p>
         HTTP header е поле в HTTP заявка или отговор, което предава информация
         или метаданни за самата заявка или отговор (фиг.
@@ -17,6 +17,27 @@
         altCaption="Sample http headers in client-server communication"
         maxWidthImg="auto"
       />
+    </article>
+    <br />
+    <hr />
+    <br />
+    <article id="http-status">
+      <h2>HTTP статус (Status)</h2>
+      <p>
+        Кодовете за състояние на HTTP отговор показват дали конкретна HTTP
+        заявка е изпълнена успешно. Отговорите са групирани в пет класа според <a href="https://httpwg.org/specs/rfc9110.html#overview.of.status.codes">RFC9110</a> стандарта:
+         <ol>
+        <li>Информационни ( <code>100</code> - <code>199</code> )</li>
+        <li>Успешни ( <code>200</code> - <code>299</code> )</li>
+        <li>Съобщения за пренасочване( <code>300</code> - <code>399</code> )</li>
+        <li>
+          Клиентски отговори за грешки ( <code>400</code> - <code>499</code> )
+        </li>
+        <li>
+          Отговори за грешка на сървъра ( <code>500</code> - <code>599</code> )
+        </li>
+      </ol>
+      </p>
     </article>
     <br />
     <hr />
