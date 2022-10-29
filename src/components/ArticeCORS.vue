@@ -12,10 +12,10 @@
     <p>
       Това споделяне на ресурси от различни източници се постига чрез
       <b>cross-origin</b> заявки (фиг.
-      {{ cross_origin_request_successful_figure_num }}).
+      {{ cross_origin_request_successful_figureNum }}).
     </p>
     <Figure
-      :figureNum="cross_origin_request_successful_figure_num"
+      :figureNum="cross_origin_request_successful_figureNum"
       figureCaption="Успешна cross-origin заявка"
       :imgData="cross_origin_request_successful_figure"
       altCaption="Successful cross-origin request"
@@ -47,36 +47,33 @@
     </p>
     <p>
       Тъй като в сървъра на localhost:3000 е подходящо конфигуриран CORS (фиг.
-      {{ correctly_configured_cors_figure_num }}), localhost:8080 има правото да
+      {{ correctly_configured_cors_figureNum }}), localhost:8080 има правото да
       инвокира GET метод на route ‘/’ на порт 3000.
     </p>
-    <figure>
-      <img
-        style="max-width: 800px"
-        src="../../media/properly-configured-cors.png"
-        alt="Properly configured CORS"
-      />
-      <figcaption>
-        Фиг. {{ correctly_configured_cors_figure_num }} Подходящо конфигуриран
-        CORS на Node сървър
-      </figcaption>
-    </figure>
+    <Figure
+      :figureNum="correctly_configured_cors_figureNum"
+      figureCaption="Подходящо конфигуриран
+        CORS на Node сървър"
+      :imgData="correctly_configured_cors_figure"
+      altCaption="Properly configured CORS"
+      maxWidthImg="800px"
+    />
     <p>
       Ако в Response Headers от фиг.
-      {{ cross_origin_request_successful_figure_num }} в
+      {{ cross_origin_request_successful_figureNum }} в
       Access-Control-Allow-Origin полето имаше звезда (*) след двоеточието, то
       това значи, че който и да е порт на localhost би могъл да достъпва този
       ресурс, а не само 8080. За да постигнем това с нашия Node сървър, изграден
       на Express фреймуърка, можем да подходим по два начина след като сме
       import-нали cors модула от папката node_modules в константа, наименувана
-      cors (фиг. {{ correctly_configured_cors_figure_num }} – line 3 |
+      cors (фиг. {{ correctly_configured_cors_figureNum }} – line 3 |
       <code>const cors = require(“cors”);</code> ). Първият е с по-малко код
       <code>app.use(cors();)</code>, а вторият с малко повече
       <code>
         const corsOptions = { origin: "*"}; app.use(cors(corsOptions));</code
       >. И двата подхода гарантират всички routes на http://localhost:3000 да са
       достъпни от който и да е порт на localhost (фиг.
-      {{ any_port_cors_figure_num }}).
+      {{ any_port_cors_figureNum }}).
     </p>
     <figure>
       <img
@@ -84,7 +81,7 @@
         src="../../media/any-port-wildcard.png"
         alt="Access-Control-Allow-Origin: Any port (*)"
       />
-      <figcaption>Фиг. {{ any_port_cors_figure_num }}</figcaption>
+      <figcaption>Фиг. {{ any_port_cors_figureNum }}</figcaption>
     </figure>
     <br />
     <hr />
@@ -100,10 +97,12 @@ export default {
   components: { ArticleSOP, Figure },
   data() {
     return {
-      cross_origin_request_successful_figure_num: 1,
+      cross_origin_request_successful_figureNum: 1,
       cross_origin_request_successful_figure: require("../../media/cross-origin-request-successful.png"),
-      correctly_configured_cors_figure_num: 3,
-      any_port_cors_figure_num: 3.5,
+      correctly_configured_cors_figureNum: 3,
+      correctly_configured_cors_figure: require("../../media/properly-configured-cors.png"),
+      any_port_cors_figureNum: 3.5,
+      any_port_cors_figure: require("../../media/any-port-wildcard.png"),
     };
   },
 };
