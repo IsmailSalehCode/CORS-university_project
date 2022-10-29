@@ -2,22 +2,7 @@
   <v-container>
     <h1 style="text-align: center">Речник</h1>
     <br />
-    <article id="http-header">
-      <h2>HTTP заглавка (Header)</h2>
-      <p>
-        HTTP header е поле в HTTP заявка или отговор, което предава информация
-        или метаданни за самата заявка или отговор (фиг.
-        {{ http_header_figureNum }}).
-      </p>
-      <Figure
-        :figureNum="http_header_figureNum"
-        :imgData="http_header_figure"
-        figureCaption="HTTP header-и под стрелките на
-          комуникацията Client-Server"
-        altCaption="Sample http headers in client-server communication"
-        maxWidthImg="auto"
-      />
-    </article>
+    <HttpHeaderArticle id="http-header" />
     <br />
     <hr />
     <br />
@@ -130,12 +115,12 @@
 </template>
 
 <script>
-import Figure from "../components/FigureDialog.vue";
 import DevToolsArticle from "../components/DevToolsArticle.vue";
+import HttpHeaderArticle from "../components/HttpHeaderArticle.vue";
 
 export default {
   props: { word: String },
-  components: { Figure, DevToolsArticle },
+  components: { DevToolsArticle, HttpHeaderArticle },
   mounted() {
     if (this.word != null) {
       // console.log("called scroll");
@@ -150,10 +135,7 @@ export default {
     }
   },
   data() {
-    return {
-      http_header_figureNum: 2,
-      http_header_figure: require("../../media/http-headers.png"),
-    };
+    return {};
   },
 };
 </script>
