@@ -7,18 +7,16 @@
       <p>
         HTTP header е поле в HTTP заявка или отговор, което предава информация
         или метаданни за самата заявка или отговор (фиг.
-        {{ http_header_figure_num }}).
+        {{ http_header_figureNum }}).
       </p>
-      <figure>
-        <img
-          src="../../media/http-headers.png"
-          alt="sample http headers in client-server communication"
-        />
-        <figcaption>
-          Фиг. {{ http_header_figure_num }} HTTP header-и под стрелките на
-          комуникацията Client-Server
-        </figcaption>
-      </figure>
+      <Figure
+        :figureNum="http_header_figureNum"
+        :imgData="http_header_figure"
+        figureCaption="HTTP header-и под стрелките на
+          комуникацията Client-Server"
+        altCaption="Sample http headers in client-server communication"
+        maxWidthImg="auto"
+      />
     </article>
     <br />
     <hr />
@@ -133,8 +131,11 @@
 </template>
 
 <script>
+import Figure from "../components/FigureDialog.vue";
+
 export default {
   props: { word: String },
+  components: { Figure },
   mounted() {
     if (this.word != null) {
       // console.log("called scroll");
@@ -150,14 +151,10 @@ export default {
   },
   data() {
     return {
-      http_header_figure_num: 2,
-      //   vocabItems: [
-      //     {
-      //       word: "HTTP header",
-      //       definition:
-      //         "HTTP header е поле в HTTP заявка или отговор, което предава информация или метаданни за самата заявка или отговор (фиг. 1).",
-      //     },
-      //   ], Not sure if this approach would be ideal cuz of text formatting in origin definition
+      http_header_figureNum: 2,
+      http_header_figure: require("../../media/http-headers.png"),
+      dev_tools_figreNum: 6,
+      dev_tools_figure: require("../../media/dev-tools.png"),
     };
   },
 };
