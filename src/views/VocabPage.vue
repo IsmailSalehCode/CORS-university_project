@@ -37,6 +37,13 @@
         достъпни за обща употреба от приложения и са известни като ефемерни
         портове.
       </p>
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
+          target="_blank"
+          >Научи повече тук...</a
+        >
+      </p>
     </article>
     <br />
     <hr />
