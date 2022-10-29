@@ -57,10 +57,10 @@
         <v-row style="text-align: center">
           <v-col style="font-size: 0.9rem">
             &#169; {{ new Date().getFullYear() }} -
-            <strong>Исмаил Салех</strong> от
+            <strong>Исмаил Салех</strong>, студент в
             <a href="https://www.tu-sofia.bg/" target="_blank"
               >Технически университет - София</a
-            >.
+            >
           </v-col>
         </v-row>
       </v-col>
