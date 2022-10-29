@@ -48,11 +48,28 @@
       извикването на OPTIONS диктува, че заявката не може да бъде направена,
       действителната заявка към сървъра няма да бъде изпълнена.
     </p>
+    <Figure
+      :figureNum="preflight_delete_figureNum"
+      :imgData="preflight_delete_figure"
+      figureCaption="Успешна Прифлайт заявка, последвана от главната DELETE заявка"
+      altCaption="Successful Preflight request, followed by the main DELETE request"
+      maxWidthImg="650px"
+    />
   </article>
 </template>
 
 <script>
-export default {};
+import Figure from "./FigureDialog.vue";
+
+export default {
+  components: { Figure },
+  data() {
+    return {
+      preflight_delete_figureNum: 7,
+      preflight_delete_figure: require("../../media/preflight-delete-cors.png"),
+    };
+  },
+};
 </script>
 
 <style>
