@@ -23,9 +23,9 @@
           >XMLHttpRequestUpload</a
         ></code
       >) от източник http://localhost:8080 бе блокирана от CORS протокола на
-      9gag, тъй като липсва Access-Control-Allow-Origin заглавка в отговора на
-      сървъра. Второто error съобщение ни дава информация, че нашата GET заявка
-      бе успешно получена ( =>
+      9gag, тъй като липсва <code>Access-Control-Allow-Origin</code> заглавка в
+      отговора на сървъра. Второто error съобщение ни дава информация, че нашата
+      <code>GET</code> заявка бе успешно получена ( =>
       <a class="vocab-redirect" href="/vocabulary?w=http-status"
         >HTTP код 200 ОК</a
       >), но отхвърлена от сървъра поради вече споменатите причини.
