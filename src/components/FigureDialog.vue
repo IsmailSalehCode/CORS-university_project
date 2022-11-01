@@ -14,7 +14,7 @@ export default {
     figureCaption: String,
     imgData: String,
     altCaption: String,
-    maxWidthImg: Number,
+    maxWidthImg: String,
   },
 
   data() {
