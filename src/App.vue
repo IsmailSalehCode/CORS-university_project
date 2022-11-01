@@ -98,6 +98,10 @@ export default {
       drawer: false,
       menuItems: [
         {
+          title: "Начало",
+          path: "/",
+        },
+        {
           title: "Същност",
           path: "/main-doc",
         },
