@@ -45,7 +45,6 @@ import XhrArticle from "../components/XhrArticle.vue";
 import CsrfArticle from "../components/CsrfArticle.vue";
 
 export default {
-  props: { word: String },
   components: {
     OriginArticle,
     PortArticle,
@@ -55,22 +54,6 @@ export default {
     HtmlArticle,
     XhrArticle,
     CsrfArticle,
-  },
-  mounted() {
-    if (this.word != null) {
-      // console.log("called scroll");
-      setTimeout(() => {
-        const element = document.getElementById(this.word);
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-          inline: "center",
-        });
-      }, 500);
-    }
-  },
-  data() {
-    return {};
   },
 };
 </script>

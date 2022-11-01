@@ -4,11 +4,13 @@
       <h1>Cross-Origin Resource Sharing</h1>
       <p>
         <b>Cross-Origin Resource Sharing</b> (<b>CORS</b> за накратко) е
-        <a class="vocab-redirect" href="/vocabulary?w=http-header"
-          >HTTP header</a
+        <router-link class="vocab-redirect" to="/vocabulary/#http-header"
+          >HTTP header</router-link
         >-базиран механизъм, който позволява на един сървър да посочи
-        дестинациите (<a class="vocab-redirect" href="/vocabulary?w=origin"
-          >origins</a
+        дестинациите (<router-link
+          class="vocab-redirect"
+          to="/vocabulary/#origin"
+          >origins</router-link
         >), различни от своите, от които един клиентски браузър може да достъпва
         ресурсите му.
       </p>
@@ -26,11 +28,13 @@
       />
       <br />
       <p>
-        На localhost:<a class="vocab-redirect" href="/vocabulary?w=port"
-          >8080</a
+        На localhost:<router-link class="vocab-redirect" to="/vocabulary/#port"
+          >8080</router-link
         >
         е хоствано
-        <a href="web-inspector" id="web-app-btn">уеб приложение</a>
+        <router-link to="web-inspector" id="web-app-btn"
+          >уеб приложение</router-link
+        >
         (горния десен прозорец), което чете
         <a class="vocab-redirect" href="/vocabulary?w=html">HTML</a>-a и броя
         снимки на подадения URL в полето „Target URL“. Тук сме подали URL към
