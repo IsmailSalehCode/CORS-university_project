@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>HTML</h2>
+    <h2>HyperText Markup Language</h2>
     <p>
       <b>HyperText Markup Language</b> (<b>HTML</b> накратко) е основният
       маркиращ език за описание и дизайн на уеб страници. HTML е стандарт в
