@@ -27,6 +27,10 @@
     <hr />
     <br />
     <XhrArticle id="xhr" />
+    <br />
+    <hr />
+    <br />
+    <CsrfArticle id="csrf" />
   </v-container>
 </template>
 
@@ -38,6 +42,7 @@ import PortArticle from "../components/PortArticle.vue";
 import OriginArticle from "../components/OriginArticle.vue";
 import HtmlArticle from "../components/HtmlArticle.vue";
 import XhrArticle from "../components/XhrArticle.vue";
+import CsrfArticle from "../components/CsrfArticle.vue";
 
 export default {
   props: { word: String },
@@ -49,6 +54,7 @@ export default {
     HttpStatusArticle,
     HtmlArticle,
     XhrArticle,
+    CsrfArticle,
   },
   mounted() {
     if (this.word != null) {
