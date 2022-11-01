@@ -36,19 +36,23 @@
           >уеб приложение</router-link
         >
         (горния десен прозорец), което чете
-        <a class="vocab-redirect" href="/vocabulary?w=html">HTML</a>-a и броя
-        снимки на подадения URL в полето „Target URL“. Тук сме подали URL към
-        уеб-галерия, съдържаща 4 снимки и хоствана на
-        <a class="vocab-redirect" href="/vocabulary?w=port">порт</a> 3000
-        (долния десен прозорец). След натискането на <kbd>Enter</kbd>, read-only
-        полето 'HTML data' се попълва с получения HTML и броячът за снимки от 0
-        става на 4. Броят <code>&lt;img&gt;</code> елементи в подадения URL e 4.
+        <router-link class="vocab-redirect" to="/vocabulary/#html"
+          >HTML</router-link
+        >-a и броя снимки на подадения URL в полето „Target URL“. Тук сме подали
+        URL към уеб-галерия, съдържаща 4 снимки и хоствана на
+        <router-link class="vocab-redirect" to="/vocabulary/#port"
+          >порт</router-link
+        >
+        3000 (долния десен прозорец). След натискането на <kbd>Enter</kbd>,
+        read-only полето 'HTML data' се попълва с получения HTML и броячът за
+        снимки от 0 става на 4. Броят <code>&lt;img&gt;</code> елементи в
+        подадения URL e 4.
       </p>
       <p>
-        Големият Прозорец отляво, наиме '<a
+        Големият Прозорец отляво, наиме '<router-link
           class="vocab-redirect"
-          href="/vocabulary?w=dev-tools"
-          >DevTools</a
+          to="/vocabulary/#dev-tools"
+          >DevTools</router-link
         >
         - localhost8080' е зададен да изобразява Network активността на
         гореописаната операция. Документирано е, че от Origin localhost:8080
