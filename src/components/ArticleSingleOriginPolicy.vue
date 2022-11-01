@@ -30,7 +30,7 @@
         >HTTP код 200 ОК</a
       >), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
-    <p>
+    <!-- <p>
       Ръчно блокиране на външни скриптове да достъпват ресурсите на сървър с
       определен порт на localhost- в случая порт 3000 (фиг.
       {{ manual_sop_config_figureNum }}):
@@ -43,7 +43,7 @@
         скриптове да взаимодействат с route-овете на http://localhost:3000"
       altCaption="Manual setting of Single Origin Policy"
       maxWidthImg="500px"
-    />
+    /> -->
   </article>
 </template>
 
@@ -56,8 +56,9 @@ export default {
     return {
       default_sop_errors_figureNum: 4,
       default_sop_errors_figure: require("../../media/default-sop-errors.png"),
-      manual_sop_config_figureNum: 5,
-      manual_sop_config_figure: require("../../media/manual-sop-config.png"),
+      // manual_sop_config_figureNum: 5,
+      // manual_sop_config_figure: require("../../media/manual-sop-config.png"),
+      // Manual sop is redundant
     };
   },
 };
