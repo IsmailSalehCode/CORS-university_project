@@ -4,6 +4,7 @@ import Home from "./views/HomePage.vue";
 import Vocab from "./views/VocabPage.vue";
 import WebInspector from "./views/WebInspector.vue";
 import ArticleCORS from "./views/ArticleCORS.vue";
+import goTo from "vuetify/lib/services/goto";
 
 Vue.use(VueRouter);
 
@@ -31,13 +32,14 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    }
+    let scrollTo = 0;
     if (to.hash) {
-      return { selector: to.hash };
+      scrollTo = to.hash;
     }
-    return { x: 0, y: 0 };
+    if (savedPosition) {
+      scrollTo = savedPosition.y;
+    }
+    return goTo(scrollTo);
   },
 });
 
