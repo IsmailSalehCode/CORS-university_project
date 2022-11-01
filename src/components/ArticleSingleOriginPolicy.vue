@@ -39,7 +39,7 @@
     <p>
       Това поведение на Same-origin policy предотвратява кибер атаки като
       <a class="vocab-redirect" href="/vocabulary?w=csrf"
-        >Cross Site Request Forgery</a
+        >Cross-Site Request Forgery</a
       >.
     </p>
   </article>
