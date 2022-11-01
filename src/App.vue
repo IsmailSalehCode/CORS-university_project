@@ -99,7 +99,7 @@ export default {
       menuItems: [
         {
           title: "Същност",
-          path: "/",
+          path: "/main-doc",
         },
         {
           title: "Речник",

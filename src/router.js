@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "./views/HomePage.vue";
 import Vocab from "./views/VocabPage.vue";
 import WebInspector from "./views/WebInspector.vue";
+import ArticleCORS from "./views/ArticleCORS.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,10 @@ const routes = [
   {
     path: "/",
     component: Home,
+  },
+  {
+    path: "/main-doc",
+    component: ArticleCORS,
   },
   {
     path: "/vocabulary",

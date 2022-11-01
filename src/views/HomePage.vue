@@ -1,18 +1,10 @@
 <template>
-  <v-container>
-    <ArticleCORS />
-    <!-- typove cors zaqvki -->
-    <!-- preflight -->
-    <!-- za6to CORS su6testvuva -->
-  </v-container>
+  <v-container> hello </v-container>
 </template>
 
 <script>
-import ArticleCORS from "../components/ArticeCORS.vue";
 export default {
-  components: {
-    ArticleCORS,
-  },
+  components: {},
 };
 </script>
 
