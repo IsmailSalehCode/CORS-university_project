@@ -1,7 +1,9 @@
 <template>
   <v-container>
+    <br />
+    <h1 style="text-align: center">Същност</h1>
+    <br />
     <article>
-      <h1>Cross-Origin Resource Sharing</h1>
       <p>
         <b>Cross-Origin Resource Sharing</b> (<b>CORS</b> за накратко) е
         <router-link class="vocab-redirect" to="/vocabulary/#http-header"

@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <br />
     <h1 style="text-align: center">Речник</h1>
     <br />
     <HttpHeaderArticle id="http-header" />
