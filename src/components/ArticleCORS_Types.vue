@@ -68,7 +68,7 @@
     <Figure
       :figureNum="preflight_failed_figureNum"
       :imgData="preflight_failed_figure"
-      figureCaption="Успешна прифлайт заявка, наиме 11, която носи информация за отхвърлената главна заявка със същото име"
+      figureCaption="Успешна прифлайт заявка, наиме 11, последвана от отхвърлената главна заявка със същото име"
     />
   </article>
 </template>
