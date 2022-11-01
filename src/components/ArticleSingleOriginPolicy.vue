@@ -19,15 +19,15 @@
     <p>
       В конзолата на Chrome Dev Tools се извеждат две error съобщения. Първото
       е, че направената заявка (<code
-        ><a class="vocab-redirect" href="/vocabulary?w=xhr"
-          >XMLHttpRequestUpload</a
+        ><router-link class="vocab-redirect" to="/vocabulary/#xhr"
+          >XMLHttpRequestUpload</router-link
         ></code
       >) от източник http://localhost:8080 бе блокирана от CORS протокола на
       9gag, тъй като липсва <code>Access-Control-Allow-Origin</code> заглавка в
       отговора на сървъра. Второто error съобщение ни дава информация, че нашата
       GET заявка бе успешно получена ( =>
-      <a class="vocab-redirect" href="/vocabulary?w=http-status"
-        >HTTP код 200 ОК</a
+      <router-link class="vocab-redirect" to="/vocabulary/#http-status"
+        >HTTP код 200 ОК</router-link
       >), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
     <p>
@@ -38,8 +38,8 @@
     </p>
     <p>
       Това поведение на Same-origin policy предотвратява кибер атаки като
-      <a class="vocab-redirect" href="/vocabulary?w=csrf"
-        >Cross-Site Request Forgery</a
+      <router-link class="vocab-redirect" to="/vocabulary/#csrf"
+        >Cross-Site Request Forgery</router-link
       >.
     </p>
   </article>
