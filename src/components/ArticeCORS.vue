@@ -80,7 +80,7 @@
       :imgData="any_port_cors_figure"
       figureCaption="Този GET route на http://localhost:3000 е достъпен за всеки порт на localhost"
       altCaption="Access-Control-Allow-Origin: Any port (*)"
-      maxWidthImg="700px"
+      maxWidthImg="650px"
     />
     <br />
     <hr />
