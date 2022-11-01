@@ -23,6 +23,10 @@
     <hr />
     <br />
     <DevToolsArticle id="dev-tools" />
+    <br />
+    <hr />
+    <br />
+    <XhrArticle id="xhr" />
   </v-container>
 </template>
 
@@ -33,6 +37,7 @@ import HttpStatusArticle from "../components/HttpStatusArticle.vue";
 import PortArticle from "../components/PortArticle.vue";
 import OriginArticle from "../components/OriginArticle.vue";
 import HtmlArticle from "../components/HtmlArticle.vue";
+import XhrArticle from "../components/XhrArticle.vue";
 
 export default {
   props: { word: String },
@@ -43,6 +48,7 @@ export default {
     HttpHeaderArticle,
     HttpStatusArticle,
     HtmlArticle,
+    XhrArticle,
   },
   mounted() {
     if (this.word != null) {

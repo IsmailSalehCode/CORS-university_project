@@ -18,11 +18,14 @@
     />
     <p>
       В конзолата на Chrome Dev Tools се извеждат две error съобщения. Първото
-      е, че направената заявка (XMLHttpRequest) от източник
-      http://localhost:8080 бе блокирана от CORS протокола на 9gag, тъй като
-      липсва Access-Control-Allow-Origin заглавка в отговора на сървъра. Второто
-      error съобщение ни дава информация, че нашата GET заявка бе успешно
-      получена ( =>
+      е, че направената заявка (<code
+        ><a class="vocab-redirect" href="/vocabulary?w=xhr"
+          >XMLHttpRequestUpload</a
+        ></code
+      >) от източник http://localhost:8080 бе блокирана от CORS протокола на
+      9gag, тъй като липсва Access-Control-Allow-Origin заглавка в отговора на
+      сървъра. Второто error съобщение ни дава информация, че нашата GET заявка
+      бе успешно получена ( =>
       <a class="vocab-redirect" href="/vocabulary?w=http-status"
         >HTTP код 200 ОК</a
       >), но отхвърлена от сървъра поради вече споменатите причини.

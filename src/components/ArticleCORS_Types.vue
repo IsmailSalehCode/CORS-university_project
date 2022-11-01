@@ -35,7 +35,8 @@
       </li>
       <li>
         Не са регистрирани event listeners (слушатели на събития) в нито един
-        <code>XMLHttpRequestUpload</code> обект
+        <code>XMLHttpRequestUpload</code>
+        обект
       </li>
       <li>Не се използва <code>ReadableStream</code> обект в заявката</li>
     </ul>
@@ -57,6 +58,18 @@
       altCaption="Successful Preflight request, followed by the main DELETE request"
       maxWidthImg="650px"
     />
+    <br />
+    <Figure
+      :figureNum="preflight_2_figureNum"
+      :imgData="preflight_2_figure"
+      figureCaption="Успешна прифлайт заявка, наиме 10, последвана от главната заявка със същото име"
+    />
+    <br />
+    <Figure
+      :figureNum="preflight_failed_figureNum"
+      :imgData="preflight_failed_figure"
+      figureCaption="Успешна прифлайт заявка, наиме 11, която носи информация за отхвърлената главна заявка със същото име"
+    />
   </article>
 </template>
 
@@ -69,6 +82,10 @@ export default {
     return {
       preflight_delete_figureNum: 7,
       preflight_delete_figure: require("../../media/preflight-delete-cors.png"),
+      preflight_2_figureNum: 8,
+      preflight_2_figure: require("../../media/preflight-2.png"),
+      preflight_failed_figureNum: 9,
+      preflight_failed_figure: require("../../media/preflight-failed.png"),
     };
   },
 };
