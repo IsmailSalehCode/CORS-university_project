@@ -4,7 +4,7 @@
     <p>
       От съображения за сигурност браузърите забраняват cross-origin HTTP
       заявките, инициирани от скриптове. Tази политика се назовава
-      <i>same-origin policy</i>. Ако направим заявка до сървър без CORS
+      <i>Same-origin policy</i>. Ако направим заявка до сървър без CORS
       конфигурацията, следното съобщение излиза на конзолата на браузъра на 8080
       (фиг. {{ default_sop_errors_figureNum }}):
     </p>
@@ -30,20 +30,18 @@
         >HTTP код 200 ОК</a
       >), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
-    <!-- <p>
-      Ръчно блокиране на външни скриптове да достъпват ресурсите на сървър с
-      определен порт на localhost- в случая порт 3000 (фиг.
-      {{ manual_sop_config_figureNum }}):
+    <p>
+      CORS ни позволява <u>отговорно</u> да 'релаксираме' тази политика, както
+      видяхме по-рано на фигура 1 и фигура 3 - като програмираме домейновете си
+      да казват на браузъра "Позволявай cross-origin заявки от домейн x, домейн
+      y и/или от домейн z".
     </p>
-    <Figure
-      :figureNum="manual_sop_config_figureNum"
-      :imgData="manual_sop_config_figure"
-      figureCaption="Настройване сървъра на уеб
-        галерията да следва same-origin policy, т.е само и единствено вътрешни
-        скриптове да взаимодействат с route-овете на http://localhost:3000"
-      altCaption="Manual setting of Single Origin Policy"
-      maxWidthImg="500px"
-    /> -->
+    <p>
+      Това поведение на Same-origin policy предотвратява кибер атаки като
+      <a class="vocab-redirect" href="/vocabulary?w=csrf"
+        >Cross Site Request Forgery</a
+      >.
+    </p>
   </article>
 </template>
 
