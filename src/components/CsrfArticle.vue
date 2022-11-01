@@ -3,10 +3,9 @@
     <h2>Cross-Site Request Forgery</h2>
     <p>
       <b>Cross-Site Request Forgery</b> ( <b>CSRF</b> / <b>XSRF</b> /
-      <b>Cross-Site Reference Forgery</b> / <b>Hostile Linking</b> /
-      <b>Session Riding</b> / <b>Sea Surf</b> ) е кибер атака, която принуждава
-      краен потребител незнайно да изпълни нежелани действия в уеб приложение, в
-      което е оторизиран и/или е записана чувствителна информация.
+      <b>Hostile Linking</b> / <b>Session Riding</b> ) е кибер атака, която
+      принуждава краен потребител незнайно да изпълни нежелани действия в уеб
+      приложение, в което е оторизиран и/или е записана чувствителна информация.
     </p>
     <p>
       CSRF скрипта наследява самоличността и привилегиите на жертвата, за да
@@ -34,6 +33,13 @@
       може да влезе отново в акаунта, за да види тези данни, заедно с историята
       на активността на жертвата в уеб приложението.
     </p>
+    <Figure
+      :figureNum="csrf_figureNum"
+      :imgData="csrf_figure"
+      figureCaption="Диаграма на CSRF атака"
+      altCaption="Диаграма на CSRF атака"
+      maxWidthImg="600px"
+    />
     <p>
       <a href="https://owasp.org/www-community/attacks/csrf" target="_blank"
         >Научи повече тук</a
@@ -41,3 +47,20 @@
     </p>
   </article>
 </template>
+
+<script>
+import Figure from "./FigureDialog.vue";
+
+export default {
+  components: { Figure },
+  data() {
+    return {
+      csrf_figureNum: 10,
+      csrf_figure: require("../../media/csrf.png"),
+    };
+  },
+};
+</script>
+
+<style>
+</style>
