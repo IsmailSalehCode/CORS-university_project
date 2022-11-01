@@ -4,7 +4,9 @@
     <p>
       Кодовете за състояние на HTTP отговор показват дали конкретна HTTP заявка
       е изпълнена успешно. Отговорите са групирани в пет класа според
-      <a href="https://httpwg.org/specs/rfc9110.html#overview.of.status.codes"
+      <a
+        href="https://httpwg.org/specs/rfc9110.html#overview.of.status.codes"
+        target="_blank"
         >RFC9110</a
       >
       стандарта:

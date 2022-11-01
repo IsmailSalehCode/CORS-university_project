@@ -20,7 +20,9 @@
         <code>HEAD</code>.
       </li>
       <li>
-        <a href="https://fetch.spec.whatwg.org/#cors-safelisted-request-header"
+        <a
+          href="https://fetch.spec.whatwg.org/#cors-safelisted-request-header"
+          target="_blank"
           >CORS safe-listed</a
         >
         заглавка се използва:
