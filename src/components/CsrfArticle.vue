@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2></h2>
+    <h2>Cross-Site Request Forgery</h2>
   </article>
 </template>
 
