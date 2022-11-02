@@ -32,28 +32,12 @@
                     Употреба в прости заявки
                 </th>
             </tr>
-            <tr>
-                <td>Origin</td>
-                <td>https://www.mydomain.com</td>
-                <td>Origin-а на отворения прозорец в браузъра</td>
-                <td>Да</td>
-                <td>Да</td>
-            </tr>
-            <tr>
-                <td>
-                  Access-Control-Request-Method  
-                </td>
-                <td>PATCH</td>
-                <td>За предварителната заявка указва какъв метод ще използва оригиналната CORS заявка</td>
-                <td>Да</td>
-                <td>Не</td>
-            </tr>
-            <tr>
-                <td>Access-Control-Request-Headers</td>
-                <td>Authorization, X-PING</td>
-                <td>За предварителната заявка, разделен със запетаи списък, указващ какви хедъри ще изпрати оригиналната CORS заявка</td>
-                <td>Да</td>
-                <td>Не</td>
+            <tr v-for="header in requestHeaders" :key="header.name">
+                <td>{{header.name}}</td>
+                <td>{{header.exampleValue}}</td>
+                <td>{{header.descr}}</td>
+                <td>{{header.usedInPreflight}}</td>
+                <td>{{header.usedInSimple}}</td>
             </tr>
         </table>
     </p>
@@ -83,13 +67,46 @@
                     Употреба в прости заявки
                 </th>
             </tr>
+            <tr>
+                <td></td>
+            </tr>
         </table>
     </p>
   </article>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      requestHeaders: [
+        {
+          name: "Origin",
+          exampleValue: "https://www.mydomain.com",
+          descr: "Origin-а на отворения прозорец в браузъра",
+          usedInPreflight: "Да",
+          usedInSimple: "Да",
+        },
+        {
+          name: "Access-Control-Request-Method",
+          exampleValue: "PATCH",
+          descr:
+            "За предварителната заявка- указва какъв метод ще използва оригиналната CORS заявка",
+          usedInPreflight: "Да",
+          usedInSimple: "Не",
+        },
+        {
+          name: "Access-Control-Request-Headers",
+          exampleValue: "Authorization, X-PING",
+          descr:
+            "За предварителната заявка- разделен със запетаи списък, указващ какви хедъри ще изпрати оригиналната CORS заявка",
+          usedInPreflight: "Да",
+          usedInSimple: "Не",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
