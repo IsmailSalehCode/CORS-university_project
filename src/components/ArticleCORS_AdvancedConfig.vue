@@ -132,6 +132,14 @@ export default {
           usedInPreflight: "Да",
           usedInSimple: "Не",
         },
+        {
+          name: "Access-Control-Allow-Headers",
+          exampleValue: "Authorization, X-PING",
+          descr:
+            "Може да бъде *, за да позволи всяко заглавие. Разделен със запетаи бял списък с разрешени заглавки, които могат да се използват за CORS заявката.",
+          usedInPreflight: "Да",
+          usedInSimple: "Не",
+        },
       ],
     };
   },
