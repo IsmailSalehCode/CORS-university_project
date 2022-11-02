@@ -2,14 +2,14 @@
   <table>
     <tr>
       <th style="background-color: black"></th>
-      <th>Начало</th>
+      <th>{{ homeName }}</th>
       <th>Същност</th>
       <th>Речник</th>
       <th>Уеб инспектор</th>
     </tr>
     <tr>
       <th>Предназначение</th>
-      <td>Въведение в проекта и разяснения по състава и структурата му.</td>
+      <td>{{ homePurpose }}</td>
       <td>
         Какво означава CORS и за какъв проблем е създаден да решава?
         Демонстрация на примерна имплементация в Node сървър.
@@ -23,7 +23,7 @@
     </tr>
     <tr>
       <th>Съдържание</th>
-      <td>Въведение, карта на сайта и инструкции за теглене на проекта.</td>
+      <td>{{ homeContent }}</td>
       <td></td>
       <td>Дефиниции на ...</td>
       <td>
@@ -37,16 +37,16 @@
     <tr>
       <th>Линк</th>
       <td id="center-text">
-        <router-link to="/">{{ linkStr }}</router-link>
+        <router-link :to="homeLink">{{ linkBtn }}</router-link>
       </td>
       <td id="center-text">
-        <router-link to="/main-doc">{{ linkStr }}</router-link>
+        <router-link to="/main-doc">{{ linkBtn }}</router-link>
       </td>
       <td id="center-text">
-        <router-link to="/vocabulary">{{ linkStr }}</router-link>
+        <router-link to="/vocabulary">{{ linkBtn }}</router-link>
       </td>
       <td id="center-text">
-        <router-link to="/web-inspector">{{ linkStr }}</router-link>
+        <router-link to="/web-inspector">{{ linkBtn }}</router-link>
       </td>
     </tr>
   </table>
@@ -56,7 +56,13 @@
 export default {
   data() {
     return {
-      linkStr: "===",
+      linkBtn: "===",
+      homeName: "Начало",
+      homePurpose:
+        "Въведение в проекта и разяснения по състава и структурата му.",
+      homeContent:
+        "Въведение, карта на сайта и инструкции за теглене на проекта.",
+      homeLink: "/",
     };
   },
 };
