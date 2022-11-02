@@ -14,7 +14,7 @@
       Браузърът счита заявката за "проста", когато тя отговаря на определен
       набор от изисквания:
     </p>
-    <ul style="line-height: 30px">
+    <ul style="line-height: 35px">
       <li>
         Един от използваните методи е <code>GET</code>, <code>POST</code> или
         <code>HEAD</code>.
@@ -31,7 +31,8 @@
       <li>
         Когато присъства заглавката Content-Type, са разрешени само следните
         стойности: <code>application/x-www-form-urlencoded</code>,
-        <code>multipart/form-data</code> или <code>text/plain</code>.
+        <code>multipart/form-data</code> или <code>text/plain</code>. Т.е.
+        заявка с <code>Content-Type: application/json</code> се preflight-ва.
       </li>
       <li>
         Не са регистрирани event listeners (слушатели на събития) в нито един
