@@ -31,16 +31,16 @@
       >), но отхвърлена от сървъра поради вече споменатите причини.
     </p>
     <p>
+      Това поведение на браузърите ни предпазва от кибер атаки като
+      <router-link class="vocab-redirect" to="/vocabulary/#csrf"
+        >Cross-Site Request Forgery</router-link
+      >.
+    </p>
+    <p>
       CORS ни позволява <u>отговорно</u> да 'релаксираме' тази политика, както
       видяхме по-рано на фигура 1 и фигура 3 - като програмираме домейновете си
       да казват на браузъра "Позволявай cross-origin заявки от origin X, origin
       Y и/или от origin Z!" .
-    </p>
-    <p>
-      Това поведение на Same-origin policy предотвратява кибер атаки като
-      <router-link class="vocab-redirect" to="/vocabulary/#csrf"
-        >Cross-Site Request Forgery</router-link
-      >.
     </p>
   </article>
 </template>
