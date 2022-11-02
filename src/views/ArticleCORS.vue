@@ -141,9 +141,8 @@ export default {
 
 <style scoped>
 #web-app-btn {
-  font-weight: bold;
   color: black;
-  border: black 2px solid;
+  border: black 1px solid;
   border-radius: 5px;
   padding: 4px;
   text-decoration: none;
