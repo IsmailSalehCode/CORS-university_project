@@ -1,7 +1,32 @@
 <template>
   <v-container>
     <center>
-      <h1 class="main-heading">Cross-Origin Resource Sharing</h1>
+      <h1 class="intro-heading">Cross-Origin Resource Sharing</h1>
+      <br />
+      <!-- <p>
+        В днешно време повечето сайтове (особено тези,
+        генериращи високи доходи - дали чрез привличане на клиентела или онлайн
+        продажби) са съставени от Front end -->
+      <!-- (софтуер, изграждащ потребителския -->
+      <!-- интерфейс)  -->
+      <!-- и Back end. В уеб програмирането тези термини означават следното: -->
+      <!-- (софтуер, инструктиращ сървъра как да -->
+      <!-- обработва/предоставя данните или командите, постъпващи от Front end-a). -->
+      <!-- </p> -->
+      <!-- <p>
+        Front end-ът е софтуер, инструктиращ браузърите как трябва да изглежда
+        потребителския интерфейс
+      </p> -->
+      <p>
+        Този проект има за цел да служи като учебно пособие по темата
+        <b>Cross-Origin Resource Sharing</b> за студенти, бъдещи уеб
+        програмисти, pentester-и и ентусиасти.
+      </p>
+      <p>
+        С нарастващата нужда от 24 ч. наличност на онлайн услуги в днешно време,
+        повечето сървъри имат нужда от възможността за изграждане на сигурни
+        канали за комуникация с различни 'дестинации'.
+      </p>
     </center>
   </v-container>
 </template>
@@ -13,14 +38,12 @@ export default {
 </script>
 
 <style scoped>
-.main-heading {
+.intro-heading {
+  margin: 30px 0px;
   border-top: 6px solid black;
   border-bottom: 6px solid black;
   width: fit-content;
   font-size: 3em;
-  background-image: radial-gradient(ellipse, #000000, #bababa);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  letter-spacing: 1px;
 }
 </style>
