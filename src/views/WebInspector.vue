@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -60,15 +61,18 @@ export default {
       this.resetData();
       // ===========
       if (this.url != null) {
-        fetch(this.url)
-          .then(function (response) {
-            return response.text();
-          })
-          .then((html) => this.updateUI(html))
-          .catch(
-            // console.log(err);
-            (this.error = true)
-          );
+        let response = null;
+        const targetURL = this.url;
+        try {
+          // URL with no images: http://www.webcode.me/
+          response = await axios.get(targetURL);
+          if (response.status == 200) {
+            this.updateUI(response.data);
+          }
+          // console.log(response);
+        } catch (err) {
+          this.error = true;
+        }
       } else {
         alert("Не сте въвели URL");
       }
