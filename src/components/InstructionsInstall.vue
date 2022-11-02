@@ -8,7 +8,7 @@
         </li>
       <li>
         Изтеглете
-        <a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a> за Вашия ОС. npm трябва да е изтеглен глобално. Проверете като отворите конзолата си и въведете <span class='terminal-input'>npm -v</span>
+        <a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a> за Вашия ОС. След това npm трябва да е изтеглен глобално. Проверете като отворите конзолата си и въведете <span class='terminal-input'>npm -v</span>
       </li>
       <li>Отворете с VSCode директорията, където бихте искали да се изтегли проекта.</li>
       <li>От лявата вертикална лента идете в 'Source Control' и после натиснете бутона 'Initialize repository'. Ще се създаде локално repo.</li>
@@ -18,7 +18,14 @@
          git pull https://github.com/IsmailSalehCode/CORS-university_project.git
         </span>
         </li>
-      <li></li>
+      <li>За да се изтеглят нужните dependencies, въведете в терминала командата:
+        <br>
+        <span class='terminal-input'>npm i</span>
+      </li>
+      <li>За build-ване на проекта и стартиране на локалния сървър въведете в терминала командата:
+        <br>
+        <span class='terminal-input'>npm run serve</span>
+      </li>
     </ol>
 
     </p>
