@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <!-- <table>
     <tr>
       <th style="background-color: black"></th>
       <th>{{ homeName }}</th>
@@ -49,6 +49,21 @@
         <router-link to="/web-inspector">{{ linkBtn }}</router-link>
       </td>
     </tr>
+  </table> -->
+  <table>
+    <tr>
+      <th v-for="name in columnNames" :key="name">
+        {{ name }}
+      </th>
+    </tr>
+    <tr v-for="page in pages" :key="page.name">
+      <td class="text-center">{{ page.name }}</td>
+      <td>{{ page.purpose }}</td>
+      <td>{{ page.content }}</td>
+      <td class="text-center">
+        <router-link :to="page.link">{{ linkBtn }}</router-link>
+      </td>
+    </tr>
   </table>
 </template>
 
@@ -56,13 +71,42 @@
 export default {
   data() {
     return {
+      columnNames: [
+        "Име на страницата",
+        "Предназначение",
+        "Съдържание",
+        "Линк",
+      ],
+      pages: [
+        {
+          name: "Начало",
+          purpose:
+            "Въведение в проекта и разяснения по състава и структурата му.",
+          content:
+            "Въведение, карта на сайта и инструкции за теглене на проекта.",
+          link: "/",
+        },
+        {
+          name: "Същност",
+          purpose:
+            "Какво означава CORS и за какъв проблем е създаден да решава? Демонстрация на примерна имплементация в Node сървър.",
+          content: "",
+          link: "/main-doc",
+        },
+        {
+          name: "Речник",
+          purpose: "",
+          content: "",
+          link: "/vocabulary",
+        },
+        {
+          name: "Уеб инспектор",
+          purpose: "",
+          content: "",
+          link: "/web-inspector",
+        },
+      ],
       linkBtn: "===",
-      homeName: "Начало",
-      homePurpose:
-        "Въведение в проекта и разяснения по състава и структурата му.",
-      homeContent:
-        "Въведение, карта на сайта и инструкции за теглене на проекта.",
-      homeLink: "/",
     };
   },
 };
