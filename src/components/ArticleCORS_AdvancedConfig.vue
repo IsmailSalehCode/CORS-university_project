@@ -124,6 +124,14 @@ export default {
           usedInPreflight: "Да",
           usedInSimple: "Не",
         },
+        {
+          name: "Access-Control-Allow-Methods",
+          exampleValue: "GET, POST, PUT, DELETE",
+          descr:
+            "Може да бъде *, за да позволи всички методи. Разделен със запетаи бял списък на разрешените методи, които могат да се използват за CORS заявката.",
+          usedInPreflight: "Да",
+          usedInSimple: "Не",
+        },
       ],
     };
   },
