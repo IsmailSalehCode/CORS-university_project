@@ -16,20 +16,8 @@
                 </th>
             </tr>
             <tr>
-                <th>
-                    Име на хедър
-                </th>
-                <th>
-                    Примерна стойност
-                </th>
-                <th>
-                    Описание
-                </th>
-                <th>
-                    Употреба в прифлайт заявки
-                </th>
-                <th>
-                    Употреба в прости заявки
+                <th v-for="name in columnNames" :key="name">
+                    {{name}}
                 </th>
             </tr>
             <tr v-for="header in requestHeaders" :key="header.name">
@@ -79,6 +67,13 @@
 export default {
   data() {
     return {
+      columnNames: [
+        "Име на хедър",
+        "Примерна стойност",
+        "Описание",
+        "Употреба в прифлайт заявки",
+        "Употреба в прости заявки",
+      ],
       requestHeaders: [
         {
           name: "Origin",
