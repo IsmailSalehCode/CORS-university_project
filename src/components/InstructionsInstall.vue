@@ -29,7 +29,7 @@
     </ol>
     </p>
     <center>
-    <hr style="max-width:50%">
+    <hr style="max-width:40%">
     </center>
     <p>
         <b>
