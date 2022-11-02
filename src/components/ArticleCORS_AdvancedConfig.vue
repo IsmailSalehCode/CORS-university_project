@@ -116,6 +116,14 @@ export default {
           usedInPreflight: "Не",
           usedInSimple: "Да",
         },
+        {
+          name: "Access-Control-Max-Age",
+          exampleValue: "600",
+          descr:
+            "Стойност в секунди за кеширане на резултатите от прифлайт заявката (т.е. данните в заглавките Access-Control-Allow-Headers и Access-Control-Allow-Methods).",
+          usedInPreflight: "Да",
+          usedInSimple: "Не",
+        },
       ],
     };
   },
