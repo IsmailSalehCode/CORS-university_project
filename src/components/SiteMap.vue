@@ -96,14 +96,16 @@ export default {
         },
         {
           name: "Речник",
-          purpose: "Добиване на обща представа за използваните научни термини.",
-          content: "",
+          purpose:
+            "Добиване на обща представа за използваните научни термини при обясненията за CORS.",
+          content:
+            "Дефиниции за HTTP header, HTTP Status, Port, Origin, HTML, DevTools, XMLHttpRequest, Cross-Site Request Forgery",
           link: "/vocabulary",
         },
         {
           name: "Уеб инспектор",
           purpose:
-            "Инвокиране на <code>GET</code> cross-origin заявки с цел изследване на промените в Network tab-а във вградените в браузъра инструменти за уеб разработчици.",
+            "Инвокиране на <code>GET</code> cross-origin заявки с цел изследване на промените в Network tab-а, намиращ се във вградените в браузъра инструменти за уеб разработчици.",
           content:
             "Уеб приложение, съставено от едно поле за въвеждане на URL, една read-only секция, която изобразява HTML-а на въведение URL след натискането на <kbd>Enter</kbd> и един брояч на <code>img</code> таговете в HTML-а. При възникнала грешка един <code>alert</code> става видим.",
           link: "/web-inspector",
