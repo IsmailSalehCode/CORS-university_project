@@ -36,7 +36,8 @@
       </p>
 
       <br />
-      <SiteStruct />
+      <SiteTable />
+      <br />
       <p>
         &nbsp;Термини, препращащи към дефиницията си в речника, изглеждат по
         следния начин:
@@ -50,9 +51,9 @@
 </template>
 
 <script>
-import SiteStruct from "../components/SiteStruct.vue";
+import SiteTable from "../components/SiteTable.vue";
 export default {
-  components: { SiteStruct },
+  components: { SiteTable },
 };
 </script>
 
