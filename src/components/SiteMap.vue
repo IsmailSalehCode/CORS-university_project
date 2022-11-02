@@ -58,7 +58,7 @@
     </tr>
     <tr v-for="page in pages" :key="page.name">
       <td class="text-center">{{ page.name }}</td>
-      <td>{{ page.purpose }}</td>
+      <td v-html="page.purpose"></td>
       <td>{{ page.content }}</td>
       <td class="text-center">
         <router-link :to="page.link">{{ linkBtn }}</router-link>
@@ -95,13 +95,14 @@ export default {
         },
         {
           name: "Речник",
-          purpose: "",
+          purpose: "Добиване на обща представа за използваните научни термини.",
           content: "",
           link: "/vocabulary",
         },
         {
           name: "Уеб инспектор",
-          purpose: "",
+          purpose:
+            "Инвокиране на <code>GET</code> cross-origin заявки с цел изследване на промените в Network tab-а във вградените в браузъра инструменти за уеб разработчици.",
           content: "",
           link: "/web-inspector",
         },
