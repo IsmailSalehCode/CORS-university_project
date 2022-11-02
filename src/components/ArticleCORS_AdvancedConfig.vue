@@ -11,7 +11,7 @@
             <tr>
                 <th colspan="5" style="text-align:center">
                     <h3>
-                    CORS Хедъри за Заявки
+                    Хедъри на Заявки
                     </h3>
                 </th>
             </tr>
@@ -62,7 +62,7 @@
              <tr>
                 <th colspan="5" style="text-align:center">
                     <h3>
-                    CORS Хедъри за Отговори
+                    Хедъри на Отговори
                     </h3>
                 </th>
             </tr>
