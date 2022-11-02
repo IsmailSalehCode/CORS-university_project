@@ -59,7 +59,7 @@
     <tr v-for="page in pages" :key="page.name">
       <td class="text-center">{{ page.name }}</td>
       <td v-html="page.purpose"></td>
-      <td>{{ page.content }}</td>
+      <td v-html="page.content"></td>
       <td class="text-center">
         <router-link :to="page.link">{{ linkBtn }}</router-link>
       </td>
@@ -91,7 +91,7 @@ export default {
           purpose:
             "Какво означава CORS и за какъв проблем е създаден да решава? Демонстрация на примерна имплементация в Node сървър.",
           content:
-            "CORS и SOP дефиниции, Node CORS имплементация, типове CORS заявки, всички CORS хедъри",
+            "CORS и SOP дефиниции, Node CORS имплементация, работа с уеб инспектора, CORS грешки, типове CORS заявки, всички CORS хедъри с предназначението им и примерни стойности",
           link: "/main-doc",
         },
         {
@@ -104,7 +104,8 @@ export default {
           name: "Уеб инспектор",
           purpose:
             "Инвокиране на <code>GET</code> cross-origin заявки с цел изследване на промените в Network tab-а във вградените в браузъра инструменти за уеб разработчици.",
-          content: "",
+          content:
+            "Уеб приложение, съставено от едно поле за въвеждане на URL, една read-only секция, която изобразява HTML-а на въведение URL след натискането на <kbd>Enter</kbd> и един брояч на <code>img</code> таговете в HTML-а. При възникнала грешка един <code>alert</code> става видим.",
           link: "/web-inspector",
         },
       ],
