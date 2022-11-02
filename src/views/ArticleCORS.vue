@@ -129,7 +129,7 @@ export default {
   data() {
     return {
       cross_origin_request_successful_figureNum: 1,
-      cross_origin_request_successful_figure: require("../../media/cross-origin-request-successful.png"),
+      cross_origin_request_successful_figure: require("../../media/cross-origin-request-successful1.png"),
       correctly_configured_cors_figureNum: 3,
       correctly_configured_cors_figure: require("../../media/properly-configured-cors.png"),
       any_port_cors_figureNum: 3.5,
