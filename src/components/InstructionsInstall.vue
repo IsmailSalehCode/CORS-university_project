@@ -27,14 +27,37 @@
         <span class='terminal-input'>npm run serve</span>
       </li>
     </ol>
-
+    </p>
+    <center>
+    <hr style="max-width:50%">
+    </center>
+    <p>
+        <b>
+        За сървъра, с който се демонстрира как уеб инспектора взаимодейства:
+        </b>
+    </p>
+    <p>
+        <ol class="vertical-list">
+            <li>
+                Отворете с VSCode директорията, където бихте искали да се изтегли проекта.
+            </li>
+            <li>
+               Въведете в терминала командата:
+               <br>
+               <span class='terminal-input'>git pull https://github.com/IsmailSalehCode/sample-web-gallery.git</span>
+            </li>
+            <li>За да се изтеглят нужните dependencies, въведете в терминала командата:
+        <br>
+        <span class='terminal-input'>npm i</span>
+      </li>
+      <li>За build-ване на проекта и стартиране на сървъра въведете в терминала командата:
+        <br>
+        <span class='terminal-input'>npm start</span>
+      </li>
+        </ol>
     </p>
   </article>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style>
 .vertical-list {
