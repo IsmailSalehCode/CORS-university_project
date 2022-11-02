@@ -106,7 +106,15 @@ export default {
           descr:
             "Заявките на CORS обикновено не включват бисквитки. Когато е зададено на true, заявката може да бъде направена с/ще включва идентификационни данни като бисквитки.",
           usedInPreflight: "Да",
-          usedInSimple: "Не",
+          usedInSimple: "Да",
+        },
+        {
+          name: "Access-Control-Expose-Headers",
+          exampleValue: "Date, X-Device-Id",
+          descr:
+            "Бял списък с допълнителни заглавки на отговор, които да бъдат изложени на раздела на браузъра извън заглавките по подразбиране",
+          usedInPreflight: "Не",
+          usedInSimple: "Да",
         },
       ],
     };
