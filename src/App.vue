@@ -56,7 +56,7 @@
       <v-col cols="12">
         <v-row style="text-align: center">
           <v-col style="font-size: 0.9rem">
-            &#169; {{ new Date().getFullYear() }} -
+            &#169; 2022 -
             <strong>Исмаил Салех</strong>, студент в
             <a href="https://www.tu-sofia.bg/" target="_blank"
               >Технически университет - София</a
