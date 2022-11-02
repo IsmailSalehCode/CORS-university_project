@@ -12,7 +12,7 @@
       </li>
       <li>Отворете с VSCode директорията, където бихте искали да се изтегли проекта.</li>
       <li>От лявата вертикална лента идете в 'Source Control' и после натиснете бутона 'Initialize repository'. Ще се създаде локално repo.</li>
-      <li>Ако не ви се е отворила автоматично конзола във VSCode, изберете от лентата с инструменти Terminal -> New Terminal. Въведете в терминала командата:
+      <li>Ако не ви се е отворила автоматично конзола във VSCode, изберете от лентата с инструменти <kbd>Terminal</kbd> -> <kbd>New Terminal</kbd>. Въведете в терминала командата:
         <br>
         <span class='terminal-input'>
          git pull https://github.com/IsmailSalehCode/CORS-university_project.git
