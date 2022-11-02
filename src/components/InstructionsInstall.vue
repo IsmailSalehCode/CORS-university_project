@@ -28,7 +28,7 @@
       </li>
     </ol>
     </p>
-    <center>
+    <center style="padding-bottom:10px;padding-top:8px">
     <hr style="max-width:40%">
     </center>
     <p>
