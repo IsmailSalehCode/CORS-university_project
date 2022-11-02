@@ -14,7 +14,7 @@
       Браузърът счита заявката за "проста", когато тя отговаря на определен
       набор от изисквания:
     </p>
-    <ul style="line-height: 35px">
+    <ul class="vertical-list">
       <li>
         Един от използваните методи е <code>GET</code>, <code>POST</code> или
         <code>HEAD</code>.

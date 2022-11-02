@@ -33,13 +33,19 @@
         докъдето бяхте стигнали.
       </p>
     </center>
+    <br />
+    <hr />
+    <br />
+    <InstallInstructions />
   </v-container>
 </template>
 
 <script>
 import SiteTable from "../components/SiteTable.vue";
+import InstallInstructions from "../components/InstructionsInstall.vue";
+
 export default {
-  components: { SiteTable },
+  components: { SiteTable, InstallInstructions },
 };
 </script>
 
