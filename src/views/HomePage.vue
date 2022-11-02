@@ -36,7 +36,7 @@
       </p>
 
       <br />
-      <SiteMap />
+      <SiteStruct />
       <p>
         &nbsp;Термини, препращащи към дефиницията си в речника, изглеждат по
         следния начин:
@@ -50,9 +50,9 @@
 </template>
 
 <script>
-import SiteMap from "../components/SiteMap.vue";
+import SiteStruct from "../components/SiteStruct.vue";
 export default {
-  components: { SiteMap },
+  components: { SiteStruct },
 };
 </script>
 
