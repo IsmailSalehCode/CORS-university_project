@@ -2,7 +2,7 @@
   <article>
     <h2>Инструкции за изтегляне на проекта</h2>
     <p>
-    <ol class="vertical-list">
+    <ol class="more-line-height">
         <li>
             Изтеглете <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> за Вашия ОС.
         </li>
@@ -37,7 +37,7 @@
         </b>
     </p>
     <p>
-        <ol class="vertical-list">
+        <ol class="more-line-height">
             <li>
                 Отворете с VSCode директорията, където бихте искали да се изтегли проекта.
             </li>
@@ -60,7 +60,7 @@
 </template>
 
 <style>
-.vertical-list {
+.more-line-height {
   line-height: 35px;
 }
 .terminal-input {
