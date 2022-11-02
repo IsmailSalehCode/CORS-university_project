@@ -105,6 +105,10 @@
       <hr />
       <br />
       <ArticleCORSTypes />
+      <br />
+      <hr />
+      <br />
+      <ArticleCORSAdvancedConfig />
     </article>
   </v-container>
 </template>
@@ -113,9 +117,15 @@
 import ArticleSOP from "../components/ArticleSingleOriginPolicy.vue";
 import Figure from "../components/FigureDialog.vue";
 import ArticleCORSTypes from "../components/ArticleCORS_Types.vue";
+import ArticleCORSAdvancedConfig from "../components/ArticleCORS_AdvancedConfig.vue";
 
 export default {
-  components: { ArticleSOP, Figure, ArticleCORSTypes },
+  components: {
+    ArticleSOP,
+    Figure,
+    ArticleCORSTypes,
+    ArticleCORSAdvancedConfig,
+  },
   data() {
     return {
       cross_origin_request_successful_figureNum: 1,
