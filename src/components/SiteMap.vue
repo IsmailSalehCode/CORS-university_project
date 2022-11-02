@@ -1,7 +1,7 @@
 <template>
   <table>
     <tr>
-      <th></th>
+      <th style="background-color: black"></th>
       <th>Начало</th>
       <th>Същност</th>
       <th>Речник</th>
@@ -36,22 +36,30 @@
     </tr>
     <tr>
       <th>Линк</th>
-      <td id="center-text"><router-link to="/">O</router-link></td>
       <td id="center-text">
-        <router-link to="/main-doc">O</router-link>
+        <router-link to="/">{{ linkStr }}</router-link>
       </td>
       <td id="center-text">
-        <router-link to="/vocabulary">O</router-link>
+        <router-link to="/main-doc">{{ linkStr }}</router-link>
       </td>
       <td id="center-text">
-        <router-link to="/web-inspector">O</router-link>
+        <router-link to="/vocabulary">{{ linkStr }}</router-link>
+      </td>
+      <td id="center-text">
+        <router-link to="/web-inspector">{{ linkStr }}</router-link>
       </td>
     </tr>
   </table>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      linkStr: "===",
+    };
+  },
+};
 </script>
 
 <style scoped>
