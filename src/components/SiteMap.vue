@@ -36,6 +36,16 @@
     </tr>
     <tr>
       <th>Линк</th>
+      <td id="center-text"><router-link to="/">O</router-link></td>
+      <td id="center-text">
+        <router-link to="/main-doc">O</router-link>
+      </td>
+      <td id="center-text">
+        <router-link to="/vocabulary">O</router-link>
+      </td>
+      <td id="center-text">
+        <router-link to="/web-inspector">O</router-link>
+      </td>
     </tr>
   </table>
 </template>
@@ -58,5 +68,8 @@ td {
   border: 1px solid grey;
   text-align: justify;
   padding: 5px;
+}
+#center-text {
+  text-align: center;
 }
 </style>
