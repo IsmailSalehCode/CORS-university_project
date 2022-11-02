@@ -38,25 +38,17 @@
                     </h3>
                 </th>
             </tr>
-             <tr>
-                <th>
-                    Име на хедър
-                </th>
-                <th>
-                    Примерна стойност
-                </th>
-                <th>
-                    Описание
-                </th>
-                <th>
-                    Употреба в прифлайт заявки
-                </th>
-                <th>
-                    Употреба в прости заявки
+           <tr>
+                <th v-for="name in columnNames" :key="name">
+                    {{name}}
                 </th>
             </tr>
-            <tr>
-                <td></td>
+            <tr v-for="header in responseHeaders" :key="header.name">
+                <td>{{header.name}}</td>
+                <td>{{header.exampleValue}}</td>
+                <td>{{header.descr}}</td>
+                <td>{{header.usedInPreflight}}</td>
+                <td>{{header.usedInSimple}}</td>
             </tr>
         </table>
     </p>
@@ -97,6 +89,16 @@ export default {
             "За предварителната заявка- разделен със запетаи списък, указващ какви хедъри ще изпрати оригиналната CORS заявка",
           usedInPreflight: "Да",
           usedInSimple: "Не",
+        },
+      ],
+      responseHeaders: [
+        {
+          name: "Access-Control-Allow-Origin",
+          exampleValue: "https://www.mydomain.com",
+          descr:
+            "Разрешените origin-и за тази заявка, посочени от сървъра. Ако не съответства на заглавката на Origin и не е *, браузърът ще отхвърли заявката. Ако е указан домейн, компонентът на протокола е задължителен и може да бъде само един домейн",
+          usedInPreflight: "Да",
+          usedInSimple: "Да",
         },
       ],
     };
