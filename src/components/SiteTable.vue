@@ -1,6 +1,11 @@
 <template>
   <table>
     <tr>
+      <th colspan="4">
+        <h3>Структура на сайта</h3>
+      </th>
+    </tr>
+    <tr>
       <th v-for="name in columnNames" :key="name">
         {{ name }}
       </th>
