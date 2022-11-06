@@ -37,7 +37,7 @@
         <router-link to="web-inspector" id="web-app-btn"
           >уеб приложение</router-link
         >
-        (горния десен прозорец), което чете
+        , изобразено в горния десен прозорец на фиг. 1, което чете
         <router-link class="vocab-redirect" to="/vocabulary/#html"
           >HTML</router-link
         >-a и броя снимки на подадения URL в полето „Target URL“. Тук сме подали
@@ -45,13 +45,13 @@
         <router-link class="vocab-redirect" to="/vocabulary/#port"
           >порт</router-link
         >
-        3000 (долния десен прозорец). След натискането на <kbd>Enter</kbd>,
-        read-only полето 'HTML data' се попълва с получения HTML и броячът за
-        снимки от 0 става на 4. Броят <code>&lt;img&gt;</code> елементи в
-        подадения URL e 4.
+        3000, изобразена в долния десен прозорец на фиг. 1. След натискането на
+        <kbd>Enter</kbd>, read-only полето 'HTML data' се попълва с получения
+        HTML и броячът за снимки от 0 става на 4. Броят
+        <code>&lt;img&gt;</code> елементи в подадения URL e 4.
       </p>
       <p>
-        Големият Прозорец отляво, наиме '<router-link
+        Големият прозорец отляво на фиг. 1, наиме '<router-link
           class="vocab-redirect"
           to="/vocabulary/#dev-tools"
           >DevTools</router-link
