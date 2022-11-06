@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-col>
+    <v-col cols="12">
       <v-row style="justify-content: center">
         <v-sheet outlined rounded="lg" width="700px">
           <v-col>
@@ -34,12 +34,19 @@
         </v-sheet>
       </v-row>
     </v-col>
+    <br />
+    <v-col cols="12" style="width: fit-content">
+      <RouteBackBtn />
+    </v-col>
   </v-container>
 </template>
 
 <script>
 import axios from "axios";
+import RouteBackBtn from "../components/RouteBackBtn.vue";
+
 export default {
+  components: { RouteBackBtn },
   data() {
     return {
       url: null,
