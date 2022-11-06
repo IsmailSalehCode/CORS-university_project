@@ -24,11 +24,6 @@
       отговора, а жертвата. Като такива, CSRF атаките са насочени към заявки за
       промяна на данни в сървър (фиг. {{ csrf_figureNum }}).
     </p>
-    <p>
-      <a href="https://owasp.org/www-community/attacks/csrf" target="_blank"
-        >Научи повече тук ...</a
-      >
-    </p>
     <Figure
       :figureNum="csrf_figureNum"
       :imgData="csrf_figure"
@@ -36,8 +31,11 @@
       altCaption="Диаграма на CSRF атака"
       maxWidthImg="600px"
     />
-    <br />
-
+    <p>
+      <a href="https://owasp.org/www-community/attacks/csrf" target="_blank"
+        >Научи повече тук ...</a
+      >
+    </p>
     <br />
   </article>
 </template>
