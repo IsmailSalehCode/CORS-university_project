@@ -15,7 +15,9 @@
       <td v-html="page.purpose"></td>
       <td v-html="page.content"></td>
       <td class="text-center">
-        <router-link :to="page.link">{{ linkBtn }}</router-link>
+        <router-link class="site-nav-page-link" :to="page.link">{{
+          linkBtn
+        }}</router-link>
       </td>
     </tr>
   </table>
@@ -86,7 +88,10 @@ td {
   text-align: justify;
   padding: 5px;
 }
-#center-text {
-  text-align: center;
+
+.site-nav-page-link {
+  color: white !important;
+  background-color: black;
+  text-decoration: none;
 }
 </style>
