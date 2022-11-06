@@ -37,7 +37,7 @@
         </b>
     </p>
     <p>
-        <ol class="more-line-height">
+        <ol class="more-line-height" start="8">
             <li>
                 Отворете с VSCode директорията, където бихте искали да се изтегли проекта.
             </li>
