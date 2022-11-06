@@ -26,18 +26,9 @@
         <br>
         <span class='terminal-input'>npm run serve</span>
       </li>
-    </ol>
-    </p>
-    <center style="padding-bottom:10px;padding-top:8px">
-    <hr style="max-width:40%">
-    </center>
-    <p>
-        <b>
-        За сървъра, с който се демонстрира как уеб инспектора взаимодейства:
-        </b>
-    </p>
-    <p>
-        <ol class="more-line-height" start="8">
+      <li> 
+        За подкарване на сървъра, с който се демонстрира как уеб инспектора взаимодейства:
+      <ol class="more-line-height" type="a">
             <li>
                 Отворете с VSCode директорията, където бихте искали да се изтегли проекта.
             </li>
@@ -55,6 +46,8 @@
         <span class='terminal-input'>npm start</span>
       </li>
         </ol>
+        </li>
+    </ol>
     </p>
   </article>
 </template>
