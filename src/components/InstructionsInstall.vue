@@ -11,7 +11,7 @@
         <a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a> за Вашия ОС. След това npm трябва да е изтеглен глобално. Проверете като отворите конзолата си и въведете <span class='terminal-input'>npm -v</span>
       </li>
       <li>Отворете с VSCode директорията, където бихте искали да се изтегли проекта.</li>
-      <li>От лявата вертикална лента идете в 'Source Control' и после натиснете бутона 'Initialize repository'. Ще се създаде локално repo.</li>
+      <li>От лявата вертикална лента идете в <v-icon >mdi-source-branch</v-icon> 'Source Control' и после натиснете бутона 'Initialize repository'. Ще се създаде локално repo.</li>
       <li>Ако не ви се е отворила автоматично конзола във VSCode, изберете от лентата с инструменти <kbd>Terminal</kbd> -> <kbd>New Terminal</kbd>. Въведете в терминала командата:
         <br>
         <span class='terminal-input'>
