@@ -37,15 +37,20 @@
     <hr />
     <br />
     <InstallInstructions />
+    <br />
+    <hr />
+    <br />
+    <UsedSources />
   </v-container>
 </template>
 
 <script>
 import SiteTable from "../components/SiteTable.vue";
 import InstallInstructions from "../components/InstructionsInstall.vue";
+import UsedSources from "../components/UsedSources.vue";
 
 export default {
-  components: { SiteTable, InstallInstructions },
+  components: { SiteTable, InstallInstructions, UsedSources },
 };
 </script>
 
