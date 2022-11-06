@@ -21,12 +21,20 @@ export default {
           title: "Short twitter extract on CORS",
         },
         {
+          url: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest#specifications",
+          title: "MDN Web Docs - XMLHttpRequest",
+        },
+        {
           url: "https://fetch.spec.whatwg.org/",
           title: "Fetch Spec - on Web Development terminology and mechanisms",
         },
         {
           url: "https://livebook.manning.com/book/cors-in-action/about-this-book/",
           title: "Manning - CORS in Action",
+        },
+        {
+          url: "https://owasp.org/www-community/attacks/csrf",
+          title: "KirstenS - Cross Site Request Forgery (CSRF)",
         },
         {
           url: "https://www.w3.org/wiki/CORS_Enabled",
@@ -36,6 +44,10 @@ export default {
           url: "https://www.moesif.com/blog/technical/cors/Authoritative-Guide-to-CORS-Cross-Origin-Resource-Sharing-for-REST-APIs/",
           title:
             "Derric Gilling - Authoritative guide to CORS (Cross-Origin Resource Sharing) for REST APIs",
+        },
+        {
+          url: "https://httpwg.org/specs/rfc9110.html#overview.of.status.codes",
+          title: "Overview of Status Codes",
         },
       ],
     };
