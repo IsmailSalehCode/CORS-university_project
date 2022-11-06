@@ -3,7 +3,7 @@
     <h2>Използвана литература</h2>
     <p>
         <ul class="more-line-height sources-list">
-            <li v-for="source in sources" :key="source">
+            <li v-for="source in sources" :key="source.title">
                 <a :href="source.url" target="_blank">{{source.title}}</a>
             </li>
         </ul>
