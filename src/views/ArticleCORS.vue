@@ -83,7 +83,7 @@
         като сме import-нали cors модула от папката node_modules в константа,
         наименувана cors (фиг. {{ correctly_configured_cors_figureNum }} – line
         3 | <code>const cors = require(“cors”);</code> ). Първият е с по-малко
-        код <code>app.use(cors();)</code>, а вторият с малко повече
+        код <code>app.use(cors());</code>, а вторият с малко повече
         <code>
           const corsOptions = { origin: "*"}; app.use(cors(corsOptions));</code
         >. И двата подхода гарантират всички routes на http://localhost:3000 да
